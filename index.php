@@ -24,10 +24,10 @@
 
 
 
-    <link href="https://course.growthschool.io/css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="https://course.growthschool.io/css/webflow.css" rel="stylesheet" type="text/css" />
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="./css/webflow.css" rel="stylesheet" type="text/css" />
     <link
-      href="https://course.growthschool.io/css/growthschool-lp-experiments.webflow.css"
+      href="./css/growthschool-lp-experiments.webflow.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -37,10 +37,10 @@
       rel="preconnect"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://course.growthschool.io/css/mastermind-long.css" />
+    <link rel="stylesheet" href="./css/mastermind-long1.css" />
     <link
       rel="stylesheet"
-      href="https://s3.ap-south-1.amazonaws.com/course.growthschool.io/css/mastermind-long.css"
+      href="css/mastermind-long2.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&amp;display=swap"
@@ -76,7 +76,7 @@
     }
     /* Navbar */
     .navbar {
-      background: #004d26;
+      background: #4c7df1;
     }
     .navbar .nav-link {
       color: #fff !important;
@@ -84,12 +84,11 @@
       margin: 0 10px;
     }
     .navbar .nav-link:hover {
-      color: #00cc66 !important;
+      color: #1226a9ff !important;
     }
     /* Hero */
     .hero {
-      background: linear-gradient(135deg, #004d26, #00b359);
-      color: white;
+      background: linear-gradient(135deg, #4c7df1, #683db6);
       padding: 120px 20px;
       text-align: center;
       position: relative;
@@ -102,7 +101,7 @@
       font-size: 1.2rem;
     }
     .btn-custom {
-      background: #00cc66;
+      background: #1824c5ff;
       color: #fff;
       border-radius: 30px;
       padding: 12px 30px;
@@ -133,12 +132,12 @@
     }
     .icon-box i {
       font-size: 40px;
-      color: #00b359;
+      color: #002cb3;
       margin-bottom: 15px;
     }
     /* Pricing */
     .pricing {
-      border: 2px solid #00cc66;
+      border: 2px solid #2b0ba9ff;
       border-radius: 20px;
       padding: 40px 20px;
       background: #fff;
@@ -146,7 +145,7 @@
     }
     .pricing:hover {
       transform: scale(1.05);
-      box-shadow: 0px 10px 30px rgba(0, 204, 102, 0.3);
+      box-shadow: 0px 10px 30px rgba(38, 24, 187, 0.3);
     }
     /* Footer */
     footer {
@@ -183,8 +182,8 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
-    <link href="https://course.growthschool.io/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="https://course.growthschool.io/images/webclip.png" rel="apple-touch-icon" />
+    <link href="./images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="./images/webclip.png" rel="apple-touch-icon" />
     <!--  Please keep this css code to improve the font quality -->
     <style>
       * {
@@ -497,8 +496,8 @@
                 />
                <h1 class="acg_heading acg_black-text width-reduce">
                   Learn
-                  <span class="acg_linear-gradient">25+ AI Tools</span> to Save
-                  Time, Money, and Supercharge Your Skills.
+                <span class="acg_linear-gradient">25+ AI Tools</span> to Supercharge Your Growth
+                 Productivity, and Success.
                 </h1>
 
 <style>
@@ -524,7 +523,10 @@ font-weight: 600;
 
 
                 <div class="acg_subhead acg_black-text">
-               This hands-on <span class="aiw">AI workshop</span>  transforms you into an AI power user who can build automated workflows, create professional content in minutes, and launch AI-powered apps—giving you the competitive edge that makes you irreplaceable in any industry.
+
+                In this hands-on <span class="aiw">AI workshop </span>, you’ll learn how to use AI to save time, create content quickly, automate tasks, and build apps—skills that make you stand out in any career.
+
+
                 </div>
                 <div class="date">
                   <div class="course-date-black newblock">
@@ -550,7 +552,7 @@ font-weight: 600;
                  <section class="hero ">
                   <div class="icon-lines"></div>
     <div class="container text-center">
-      <h1 class="animate__animated animate__fadeInDown">Artificial Intelligence for Global Professionals</h1>
+      <h1 class="animate__animated animate__fadeInDown" style="color:white">Artificial Intelligence for Global Professionals</h1>
       <p class="animate__animated animate__fadeInUp mt-3">Learn in <b>12 Weeks</b> → Earn for <b>12 Years</b></p>
 
       <p style="text-align: center;     margin-left: 167px;">
@@ -595,38 +597,10 @@ font-weight: 600;
                     <div class="text-block-442" id="event-time-2"></div>
                   </div>
                 </div>
-                <a href="#" class="acg_lightbox w-inline-block w-lightbox"
-                  ><img
-                    src="https://course.growthschool.io/images/play-button.svg"
-                    loading="lazy"
-                    alt="icon"
-                    class="play"
-                  /><img
-                    src="https://course.growthschool.io/images/thumbnail.webp"
-                    alt=""
-                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 91vw, 520px"
-                    srcset="
-                      images/thumbnail-p-500.png   500w,
-                      images/thumbnail-p-800.png   800w,
-                      images/thumbnail-p-1080.png 1080w,
-                      images/thumbnail-p-1600.png 1600w,
-                      images/thumbnail.webp       2080w
-                    "
-                    class="acg_thumbnail"
-                  />
-                  <script type="application/json" class="w-json">
-                    {
-                      "items": [
-                        {
-                          "width": 940,
-                          "height": 529,
-                          "type": "video"
-                        }
-                      ],
-                      "group": ""
-                    }
-                  </script>
-                </a>
+            <video src="video-manav-sir.mp4" autoplay muted loop playsinline style="max-width:100%; height:auto;">
+            आपकी ब्राउज़र वीडियो टैग सपोर्ट नहीं करती। <a href="video-manav-sir.mp4">वीडियो डाउनलोड करें</a>  </video>
+
+
                 <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
                   >Join Now</a
                 >
@@ -647,89 +621,7 @@ font-weight: 600;
 
 
 
-
-          <div class="acg_padding-global">
-            <div class="w-layout-blockcontainer w-container">
-              <div class="acg_wrapping">
-                <div class="acg_lead-logo-wrap">
-                  <div class="acg_subhead acg_black-text">
-                    We are backed by world’s leading VCs
-                  </div>
-                  <div class="acg_lead-logo">
-                    <div class="owl-venture-sequia acg_bg-black">
-                      <img
-                        src="https://course.growthschool.io/images/Frame-1430103134.svg"
-                        loading="lazy"
-                        alt=""
-                        class="owl-sequia-image"
-                      />
-                    </div>
-                    <div class="owl-venture-sequia acg_bg-black">
-                      <img
-                        src="https://course.growthschool.io/images/Logo-2.webp"
-                        loading="lazy"
-                        alt=""
-                        class="owl-sequia-image"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="acg_rate-logo-wrap acg_box-shadow">
-                  <div class="acg_subhead acg_black-text">Rated</div>
-                  <div class="acg_rate-logo">
-                    <div
-                      id="w-node-_0c813e2d-18ff-dfd0-8ebb-f7950217941e-0986b2cc"
-                      class="trust-rating-badge-reg acg_light-bg"
-                    >
-                      <img
-                        src="https://course.growthschool.io/images/Graphic_1Graphic.png"
-                        alt=""
-                        id="w-node-_0c813e2d-18ff-dfd0-8ebb-f7950217941f-0986b2cc"
-                        class="icon-1x1-medium-5"
-                      />
-                      <div
-                        id="w-node-_0c813e2d-18ff-dfd0-8ebb-f79502179420-0986b2cc"
-                        class="flex-col-2"
-                      >
-                        <div class="rating-text-medium font-12 acg_black-text">
-                          4.7/5 (5625)
-                        </div>
-                        <div
-                          class="text-size-regular-3 text-weight-medium opacity-70 acg_black-text"
-                        >
-                          Trustpilot
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      id="w-node-_0c813e2d-18ff-dfd0-8ebb-f79502179425-0986b2cc"
-                      class="trust-rating-badge-reg acg_light-bg"
-                    >
-                      <img
-                        src="https://course.growthschool.io/images/Graphic.webp"
-                        alt=""
-                        id="w-node-_0c813e2d-18ff-dfd0-8ebb-f79502179426-0986b2cc"
-                        class="icon-1x1-medium-5"
-                      />
-                      <div
-                        id="w-node-_0c813e2d-18ff-dfd0-8ebb-f79502179427-0986b2cc"
-                        class="flex-col-2"
-                      >
-                        <div class="rating-text-medium font-12 acg_black-text">
-                          4.4/5 (3704)
-                        </div>
-                        <div
-                          class="text-size-regular-3 text-weight-medium opacity-70 acg_black-text"
-                        >
-                          Google Reviews
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+ 
         </section>
 
  <section class="section text-center" id="about">
@@ -787,12 +679,11 @@ font-weight: 600;
               <div class="acg_learners-wrapper">
                 <div class="acg_heading-h2-wrapper">
                   <h2 class="acg_heading-h2 acg_black-text">
-                    Join
+                    Over
                     <span class="acg_linear-gradient-h2"
-                      >2 Million+ Global Learners</span
+                      >2 Million+ Learners worldwide</span
                     >
-                    who have successfully completed the program to become an
-                    AI-powered professional
+                     have already become AI-powered professionals—now it’s your turn.
                   </h2>
                 </div>
                 <div class="acg_learners-marquee-wrap">
@@ -1114,51 +1005,7 @@ font-weight: 600;
 
 
 
-
-        <section class="acg_section">
-          <div class="acg_padding-global">
-            <div class="w-layout-blockcontainer w-container">
-              <div class="acg_feature">
-                <div class="acg_feature-wrapper-light">
-                  <h2 class="acg_heading-h2">Featured in</h2>
-                  <div class="acg_feature-logo">
-                    <img
-                      src="https://course.growthschool.io/images/Rectangle-113.webp"
-                      loading="lazy"
-                      id="w-node-_8506cb33-cf85-68b7-15fb-d621f6c5d907-0986b2cc"
-                      alt=""
-                    /><img
-                      src="https://course.growthschool.io/images/Rectangle-115.webp"
-                      loading="lazy"
-                      id="w-node-_7af8e090-b697-19dc-db5a-bde582be56f9-0986b2cc"
-                      alt=""
-                    /><img
-                      src="https://course.growthschool.io/images/Rectangle-114.webp"
-                      loading="lazy"
-                      id="w-node-d713ca86-d9a7-3fa1-31fa-da6ef869e3a4-0986b2cc"
-                      alt=""
-                    /><img
-                      src="https://course.growthschool.io/images/Rectangle-116.webp"
-                      loading="lazy"
-                      id="w-node-_04826e6e-b4b6-fefe-f524-3f84345bc479-0986b2cc"
-                      alt=""
-                    /><img
-                      src="https://course.growthschool.io/images/Layer_1.webp"
-                      loading="lazy"
-                      id="w-node-_19d9e74e-e182-552e-1ea3-158d01fb9332-0986b2cc"
-                      alt=""
-                    /><img
-                      src="https://course.growthschool.io/images/Rectangle-118.webp"
-                      loading="lazy"
-                      id="w-node-c9ca5116-d20b-b7a4-3516-c426dd107890-0986b2cc"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+ 
 
 
           <!-- Pricing -->
@@ -1484,7 +1331,7 @@ font-weight: 600;
               <div class="acg_common-wrapper">
                 <div class="acg_heading-h2-module-wrapper">
                   <h2 class="acg_heading-h2 acg_black-text">
-                    Here’s What You’ll Learn in the 2-Day AI Mastermind
+                   Inside the 2-Day AI Mastermind: What You’ll Learn
                   </h2>
                 </div>
                 <div class="acg_module-card-wrapper">
@@ -2201,10 +2048,9 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
         </section> -->
 
     <section class="mentors-section">
-      <h2 class="section-title">Learn from the top 1% in AI</h2>
+      <h2 class="section-title">Learn directly from the top 1% in AI</h2>
       <p class="section-description">
-        ...as They Guide You Through Cutting-Edge Tools—Transforming the Way You
-        Work and Create
+        ...and unlock cutting-edge tools to revolutionize your work and creativity.
       </p>
 
       <!-- Mentor Cards Container for Mobile Scrolling -->
@@ -2212,11 +2058,11 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
         <div class="mentor-cards">
               <div class="mentor-card">
             <img
-              src="manav.JPG"
+              src="a1.jfif"
               class="mentor-image"
             />
             <div class="mentor-info">
-              <h3 class="mentor-name">Dr Manav Ahuja</h3>
+              <h3 class="mentor-name">Volodymyr Nosenko</h3>
               <p class="mentor-position">Director TPEG</p>
             </div>
           </div>
@@ -2225,12 +2071,11 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
 
           <div class="mentor-card">
             <img
-              src="vanshika.JPG"
-              alt="Priyanku Sharma"
+              src="a2.jfif"
               class="mentor-image"
             />
             <div class="mentor-info">
-              <h3 class="mentor-name">Vanshika Sharma</h3>
+              <h3 class="mentor-name">Dorian Lazzari</h3>
               <p class="mentor-position">Visual Art Director</p>
               
             </div>
@@ -2238,12 +2083,11 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
 
           <div class="mentor-card">
             <img
-              src="ram.JPG"
-              alt="Sanjay Singh"
+              src="a4.jfif"
               class="mentor-image"
             />
             <div class="mentor-info">
-              <h3 class="mentor-name">Sanjay Singh</h3>
+              <h3 class="mentor-name">Pasha Levosiuk</h3>
               <p class="mentor-position">Media Founder</p>
                
             </div>
@@ -2251,11 +2095,11 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
 
           <div class="mentor-card">
             <img
-              src="tanya.JPG"
+              src="a3.jfif"
               class="mentor-image"
             />
             <div class="mentor-info">
-              <h3 class="mentor-name">Tanya Tyagi</h3>
+              <h3 class="mentor-name">Pavlo Khlopiachyi·</h3>
               <p class="mentor-position">AI Founder</p>
               
             </div>
