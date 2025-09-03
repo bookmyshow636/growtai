@@ -618,12 +618,8 @@ font-weight: 600;
                     {
                       "items": [
                         {
-                          "url": "https://vimeo.com/815729689/508164155c",
-                          "originalUrl": "https://vimeo.com/815729689/508164155c",
                           "width": 940,
                           "height": 529,
-                          "thumbnailUrl": "https://i.vimeocdn.com/video/1650887019-0ef393129df2ec30424a902a470e4d392221274184a3c2065e4c600c3404c5ef-d?f=webp",
-                          "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F815729689%3Fh%3D508164155c%26app_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fvimeo.com%2F815729689%2F508164155c&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1650887019-0ef393129df2ec30424a902a470e4d392221274184a3c2065e4c600c3404c5ef-d%3Ff%3Dwebp&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"529\" scrolling=\"no\" title=\"Vimeo embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"></iframe>",
                           "type": "video"
                         }
                       ],
