@@ -1175,7 +1175,7 @@ font-weight: 600;
             <h3>AI Basics - 12 Weeks</h3>
             <h2 class="my-3">$99</h2>
             <p>12 Weeks of Learning → 12 Years of Earning</p>
-            <a href="#" class="btn btn-custom mt-3">Enroll Now</a>
+            <a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-custom mt-3">Enroll Now</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -1183,7 +1183,7 @@ font-weight: 600;
             <h3>30 Min Demo</h3>
             <h2 class="my-3">$1</h2>
             <p>Fix your 30 Min Demo Session at just $1</p>
-            <a href="#" class="btn btn-custom mt-3">Book Demo</a>
+            <a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-custom mt-3">Book Demo</a>
           </div>
         </div>
       </div>
