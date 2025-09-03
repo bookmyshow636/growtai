@@ -631,7 +631,7 @@ font-weight: 600;
                     }
                   </script>
                 </a>
-                <a href="#" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
+                <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
                   >Join Now</a
                 >
               </div>
@@ -2010,7 +2010,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
                       </div>
                     </div>
                   </div>
-                  <a href="#" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
+                  <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
                     >Join Now</a
                   >
                 </div>
@@ -2982,7 +2982,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
                       </div>
                     </div>
                     <a
-                      href="#"
+                      href="https://rzp.io/rzp/PhAVaRu"
                       class="acg_button-white light-white acg_button w-button final-cta" data-track-cta="true"
                       >Join Now</a
                     >
@@ -3480,7 +3480,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
                     value from me 😁
                   </div>
                   <a
-                    href="#"
+                    href="https://rzp.io/rzp/PhAVaRu"
                     class="acg_button-white light-white acg_button w-button final-cta" data-track-cta="true"
                     >Join Now</a
                   >
