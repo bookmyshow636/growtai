@@ -467,7 +467,7 @@
                   <div class="acg_time acg_black-text cur-date">12 May</div>
                 </div>
               </div>
-              <a href="#" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
+              <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
                 >Join Now</a
               >
             </div>
