@@ -2783,63 +2783,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
                     id="w-node-_47cdead1-8713-f4fd-2ee5-53f5930235d0-0986b2cc"
                     class="acg_block"
                   >
-                    <div class="acg_why-gs-bottom">
-                      <div
-                        class="acg_text-small acg_opacity-0-7 acg_black-text"
-                      >
-                        Backed by the best
-                      </div>
-                      <div class="acg_why-gs-grid">
-                        <div class="div-block-946 acg_rating-border-light">
-                          <img
-                            src="https://course.growthschool.io/images/Group.svg"
-                            loading="lazy"
-                            alt=""
-                            class="inverted"
-                          />
-                        </div>
-                        <div class="div-block-946 acg_rating-border-light">
-                          <img
-                            src="https://course.growthschool.io/images/logo.svg"
-                            loading="lazy"
-                            alt=""
-                            class="inverted"
-                          />
-                        </div>
-                      </div>
-                      <div class="acg_text-small">
-                        and 80+ Angel investors like
-                      </div>
-                      <div class="acg_investors-new">
-                        <div class="acg_investor-wrapper">
-                          <div class="acg_investor-name">Austen Alred</div>
-                          <img
-                            src="https://course.growthschool.io/images/Rectangle-4463-1.webp"
-                            loading="lazy"
-                            width="120"
-                            alt=""
-                          />
-                        </div>
-                        <div class="acg_investor-wrapper">
-                          <img
-                            src="https://course.growthschool.io/images/image-91-2-1_1.webp"
-                            loading="lazy"
-                            width="120"
-                            alt=""
-                          />
-                          <div class="acg_investor-name">Eric Siu</div>
-                        </div>
-                        <div class="acg_investor-wrapper">
-                          <img
-                            src="https://course.growthschool.io/images/image-1161-1_1.webp"
-                            loading="lazy"
-                            width="120"
-                            alt=""
-                          />
-                          <div class="acg_investor-name">Justin Caldbeck</div>
-                        </div>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
