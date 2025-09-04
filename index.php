@@ -1781,7 +1781,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
                     <h2 class="acg_heading-h2 acg_black-text">
                       And Also Enjoy
                       <span class="acg_linear-gradient-h2"
-                        >Bonuses Worth ₹99 for FREE!</span
+                        >Bonuses Worth $99 for FREE!</span
                       >
                     </h2>
                   </div>
@@ -2824,21 +2824,21 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
                       <div class="acg_list">
                         <img src="https://course.growthschool.io/images/Vector-67.svg" loading="lazy" alt="" />
                         <div>
-                          ₹2000 worth of course content on leveraging AI &amp;
+                          $200 worth of course content on leveraging AI &amp;
                           ChatGPT as a professional
                         </div>
                       </div>
                       <div class="acg_list">
                         <img src="https://course.growthschool.io/images/Vector-67.svg" loading="lazy" alt="" />
                         <div>
-                          ₹5000 in bonuses to help you become an AI-powered
+                          $500 in bonuses to help you become an AI-powered
                           professional
                         </div>
                       </div>
                       <div class="acg_list">
                         <img src="https://course.growthschool.io/images/Vector-67.svg" loading="lazy" alt="" />
                         <div>
-                          ₹2300 access pass to a global community of
+                          $7300 access pass to a global community of
                           professional and AI-enthusiasts
                         </div>
                       </div>
