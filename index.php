@@ -3325,28 +3325,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
                 </div>
               </div>
               <div class="acg_gs-info">
-                <div class="a-wrapcg_gs-info">
-                  <div>
-                    <h2 class="acg_pricing-heading">Still not convinced?</h2>
-                  </div>
-                  <div class="acg_rate _400 align-center">
-                    Go to Google and type my name,
-                    <span class="_600">Manav Ahuja</span>. <br />Go to my
-                    <span class="_600">Facebook page</span> or
-                    <span class="_600">Trustpilot</span> and check my
-                    reviews.<br />Go to my
-                    <span class="_600">LinkedIn</span> and check my endorsements
-                    and recommendations.<br />Go to my
-                    <span class="_600">Instagram</span> and check my
-                    highlights.<br />I’m sure you’ll have no problem getting
-                    value from me 😁
-                  </div>
-                  <a
-                    href="https://rzp.io/rzp/PhAVaRu"
-                    class="acg_button-white light-white acg_button w-button final-cta" data-track-cta="true"
-                    >Join Now</a
-                  >
-                </div>
+                 
               </div>
             </div>
           </div>
