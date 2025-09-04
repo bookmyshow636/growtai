@@ -2053,7 +2053,7 @@ figcaption {
   border-radius: 32px;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  /* width: 400px; */
   padding-top: 18px;
   padding-bottom: 18px;
   font-size: 1.25rem;

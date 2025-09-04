@@ -488,7 +488,7 @@
             <div class="w-layout-blockcontainer w-container">
               <div class="acg_hero-wrapper">
                 <img
-                  src="Human_Tech-removebg-preview.webp"
+                  src="Human_Tech-removebg-preview.png"
                   loading="lazy"
                 
                   alt=""
@@ -597,8 +597,13 @@ font-weight: 600;
                     <div class="text-block-442" id="event-time-2"></div>
                   </div>
                 </div>
-            <video src="video-manav-sir.mp4" autoplay muted loop playsinline style="max-width:100%; height:auto;">
-            आपकी ब्राउज़र वीडियो टैग सपोर्ट नहीं करती। <a href="video-manav-sir.mp4">वीडियो डाउनलोड करें</a>  </video>
+           <video id="myVideo" src="video-manav-sir.mp4" controls style="max-width:100%; height:auto;"></video>
+
+<script>
+  document.addEventListener("click", function() {
+    document.getElementById("myVideo").play();
+  });
+</script>
 
 
                 <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
@@ -1015,9 +1020,9 @@ font-weight: 600;
       <div class="row justify-content-center g-4">
         <div class="col-md-4">
           <div class="pricing wow pulse">
-            <h3>AI Basics - 12 Weeks</h3>
+            <h3>AI Basics - 06 Weeks</h3>
             <h2 class="my-3">$99</h2>
-            <p>12 Weeks of Learning → 12 Years of Earning</p>
+            <p>06 Weeks of Learning → 12 Years of Earning</p>
             <a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-custom mt-3">Enroll Now</a>
           </div>
         </div>
@@ -2125,6 +2130,105 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     </style>
 
 
+ <section class="acg_section acg_overflow">
+
+<style>
+.pricing-card { border:0; border-radius:1rem; box-shadow:0 10px 25px rgba(0,0,0,.06); }
+.pricing-card .card-header { background:#fff; border-bottom:0; border-top-left-radius:1rem; border-top-right-radius:1rem; }
+.price { font-size:2rem; font-weight:700; }
+.duration { font-size:0.95rem; color:#6c757d; }
+.btn {  padding:.65rem 1rem; font-weight:600; }
+</style>
+
+
+
+<div class="container py-5">
+<div class="text-center mb-4">
+<h1 class="h3 font-weight-bold mb-2">Choose Your Plan</h1>
+<p class="text-muted mb-0">Click “Join Now” to proceed to payment</p>
+</div>
+
+
+<div class="row">
+<!-- Demo Plan -->
+<div class="col-12 col-md-6 col-lg-3 mb-4">
+<div class="card pricing-card h-100">
+<div class="card-header text-center">
+<h5 class="mb-1">Demo</h5>
+<div class="price">$1</div>
+<div class="duration">30 minutes</div>
+</div>
+<div class="card-body d-flex flex-column">
+<ul class="list-unstyled small text-muted mb-4">
+<li>Quick overview session</li>
+<li>Live demo access</li>
+</ul>
+<a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-primary" >Join Now</a>
+</div>
+</div>
+</div>
+
+
+<!-- Basic Plan -->
+<div class="col-12 col-md-6 col-lg-3 mb-4">
+<div class="card pricing-card h-100">
+<div class="card-header text-center">
+<h5 class="mb-1">Gold</h5>
+<div class="price">$99</div>
+<div class="duration">6 weeks</div>
+</div>
+<div class="card-body d-flex flex-column">
+<ul class="list-unstyled small text-muted mb-4">
+<li>Foundational curriculum</li>
+<li>Community support</li>
+</ul>
+<a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-primary" data-track-cta="true">Join Now</a>
+</div>
+</div>
+</div>
+
+
+<!-- Diamond Plan -->
+<div class="col-12 col-md-6 col-lg-3 mb-4">
+<div class="card pricing-card h-100">
+<div class="card-header text-center">
+<h5 class="mb-1">Daimond</h5>
+<div class="price">$199</div>
+<div class="duration">12 weeks</div>
+</div>
+<div class="card-body d-flex flex-column">
+<ul class="list-unstyled small text-muted mb-4">
+<li>Advanced topics</li>
+<li>Live projects</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-primary" data-track-cta="true">Join Now</a>
+</div>
+</div>
+</div>
+
+
+<!-- 24 Week Plan -->
+<div class="col-12 col-md-6 col-lg-3 mb-4">
+<div class="card pricing-card h-100">
+<div class="card-header text-center">
+<h5 class="mb-1">Extended</h5>
+<div class="price">$490</div>
+<div class="duration">24 weeks</div>
+</div>
+<div class="card-body d-flex flex-column">
+<ul class="list-unstyled small text-muted mb-4">
+<li>Complete program</li>
+<li>Full support</li>
+<li>.</li>
+</ul>
+<a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-primary" data-track-cta="true">Join Now</a>
+</div>
+</div>
+</div>
+    </section>
+
         <!-- <section class="acg_section acg_overflow">
           <div class="acg_padding-global acg_faq-0-padding">
             <div
@@ -2294,21 +2398,19 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
         <div class="testimonial-container scrollable-container">
           <div
             class="testimonial-card image-card"
-            data-video-url="https://player.vimeo.com/video/1017077793?autoplay=1"
           >
             <img
-              src="https://course.growthschool.io/images/vm1.png"
-              alt="Ankur Sarkar Thumbnail"
+              src="b2.jfif"
               class="thumbnail-image"
             />
 
             <!-- Overlay with play button and text -->
             <div
               class="overlay1"
-              onclick="openVideoPopup('https://player.vimeo.com/video/1017077793?autoplay=1')"
+              onclick=""
             >
               <div class="play-button">▶</div>
-              <p class="testimonial-name">Ankur Sarkar</p>
+              <p class="testimonial-name">Oussama Bammou</p>
               <!-- <p class="testimonial-title">Principal Strategist, Adobe</p> -->
             </div>
           </div>
@@ -2316,15 +2418,12 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
           <div class="testimonial-card text-card">
             <img src="https://course.growthschool.io/images/ailink.png" class="linkedin-icon" />
             <p class="testimonial-text">
-              My day doesn't do without thanks to TPEG Dubai webinar
-              attendance experience. I express desk gratitude to Mr V. and all
-              experts who have presented the knowledge. I'm already bootstrapped
-              and dived into refining my skills.
+            My day feels incomplete without acknowledging the value of the TPEG Dubai webinar experience. I sincerely thank Mrs. Vnk and all the experts for sharing their knowledge. I’ve already taken the first steps and am fully committed to refining my skills.
             </p>
             <div class="person-info">
               <!-- <img src="images/aitest1.png" alt="Sirazul Zaman" class="person-image"> -->
               <div>
-                <p class="testimonial-name">Jayaasrinnivas Patri</p>
+                <p class="testimonial-name">Jesse Ringham</p>
                 <!-- <p class="testimonial-title">Principal Strategist, Adobe</p> -->
               </div>
             </div>
@@ -2332,19 +2431,16 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
 
           <div
             class="testimonial-card image-card"
-            data-video-url="https://player.vimeo.com/video/1017065723?autoplay=1"
           >
             <img
-              src="https://course.growthschool.io/images/vm2.png"
-              alt="Ankur Sarkar Thumbnail"
+              src="b4.jfif"
               class="thumbnail-image"
             />
             <div
               class="overlay1"
-              onclick="openVideoPopup('https://player.vimeo.com/video/1017065723?autoplay=1')"
             >
               <div class="play-button">▶</div>
-              <p class="testimonial-name">Parvinder Singh Sarin</p>
+              <p class="testimonial-name">Yiannoss Perrior</p>
               <!-- <p class="testimonial-title">Principal Strategist, Adobe</p> -->
             </div>
           </div>
@@ -2352,12 +2448,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
           <div class="testimonial-card text-card">
             <img src="https://course.growthschool.io/images/ailink.png" class="linkedin-icon" />
             <p class="testimonial-text">
-              Thanks again everyone at &nbsp;TPEG Dubai Team and the whole community!
-              You are such examples of commitment, joy, and dedication to help
-              people believe that they can do what they couldn't do before! I
-              will see how to apply what you have taught in my specific field of
-              minimizing the amount of manual work to draw out beyond
-              translation insights from ancient biblical texts.
+              Many thanks once again to the TPEG Dubai Team and the entire community! You exemplify commitment, joy, and dedication, inspiring people to achieve what once felt impossible. I’m eager to apply what I’ve learned to my work—reducing manual effort and uncovering deeper insights from ancient biblical texts beyond translation.
             </p>
             <div class="person-info">
               <!-- <img src="images/aitest1.png" alt="Krishnan Tyer" class="person-image"> -->
@@ -2374,14 +2465,12 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
           <div class="testimonial-card text-card">
             <img src="https://course.growthschool.io/images/ailink.png" class="linkedin-icon" />
             <p class="testimonial-text">
-              Great great great session! Actually enjoyed jumping into the world
-              of Al. It was actually an eye opening session! It was really a
-              BOOM! Hat's off to Vaibhav & team!
+            What an incredible session! Truly enjoyed diving into the world of AI—it was eye-opening and an absolute game-changer. Hats off to Vaibhav and the entire team!
             </p>
             <div class="person-info">
               <!-- <img src="images/aitest1.png" alt="Jane Doe" class="person-image"> -->
               <div>
-                <p class="testimonial-name">Parmeet Singh Khanuja</p>
+                <p class="testimonial-name">Artem Khachatu</p>
                 <!-- <p class="testimonial-title">UX Designer, Google</p> -->
               </div>
             </div>
@@ -2392,16 +2481,15 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
             data-video-url="https://player.vimeo.com/video/1017071709?autoplay=1"
           >
             <img
-              src="https://course.growthschool.io/images/vm3.png"
+              src="b5.jfif"
               alt="Ankur Sarkar Thumbnail"
               class="thumbnail-image"
             />
             <div
               class="overlay1"
-              onclick="openVideoPopup('https://player.vimeo.com/video/1017071709?autoplay=1')"
             >
               <div class="play-button">▶</div>
-              <p class="testimonial-name">Harish Prakash</p>
+              <p class="testimonial-name">Daniil Sergeev</p>
               <!-- <p class="testimonial-title">Principal Strategist, Adobe</p> -->
             </div>
           </div>
@@ -2409,11 +2497,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
           <div class="testimonial-card text-card">
             <img src="https://course.growthschool.io/images/ailink.png" class="linkedin-icon" />
             <p class="testimonial-text">
-              Massive thanks to Prashanth, Phani, Vaibhav, Manish, PK, and the
-              entire TPEG Dubai team for absolutely over-delivering in
-              today's Gen Al Mastermind session! The insights and value were
-              next-level-truly exceeded expectations. Can't wait for what's
-              next!
+               An absolutely fantastic session! Huge thanks to Prashanth, Phani, Vaibhav, Manish and the entire TPEG Dubai team for going above and beyond in today’s Gen AI Mastermind. The insights and value were exceptional—far beyond expectations. Excited for what’s coming next!
             </p>
             <div class="person-info">
               <!-- <img src="images/aitest1.png" alt="Mary Smith" class="person-image"> -->
@@ -2429,16 +2513,14 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
             data-video-url="https://player.vimeo.com/video/1017050786?autoplay=1"
           >
             <img
-              src="https://course.growthschool.io/images/vm4.png"
-              alt="Ankur Sarkar Thumbnail"
+              src="b6.jfif"
               class="thumbnail-image"
             />
             <div
               class="overlay1"
-              onclick="openVideoPopup('https://player.vimeo.com/video/1017050786?autoplay=1')"
             >
               <div class="play-button">▶</div>
-              <p class="testimonial-name">Krishnan Tyer</p>
+              <p class="testimonial-name">Anton Krishnan Tyer</p>
               <!-- <p class="testimonial-title">Principal Strategist, Adobe</p> -->
             </div>
           </div>
@@ -2621,14 +2703,10 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
                   </div>
                   <div class="acg_max-width-880">
                     <p class="acg_text acg_black-text">
-                      TPEG Dubai is where you become the
-                      <span class="acg_linear-gradient-h2">Top 1%</span> in your
-                      field. <br />We bring the best of Product, Growth, Design,
-                      Tech, data and business mentors from brands like
-                      <span class="acg_linear-gradient-h2"
-                        >Google, Meta, Uber</span
-                      >
-                      etc doing the jobs you want to do tomorrow.
+
+
+                                        At TPEG Dubai, we help you rise into the  Top 1%</span> of your field. <br /> Learn directly from world-class mentors in Product, Growth, Design, Tech, Data, and Business—leaders from Google, Meta, Uber,
+                       and other top brands already doing the jobs you aspire to tomorrow.
                     </p>
                   </div>
                 </div>
@@ -3335,7 +3413,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
               <div class="acg_footer-wrapper">
                 <div>
                   <img
-                    src="Human_Tech-removebg-preview.webp"
+                    src="Human_Tech-removebg-preview.png"
                     loading="lazy"
                   
                     alt=""
