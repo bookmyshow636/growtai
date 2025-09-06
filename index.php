@@ -450,29 +450,137 @@
     </div>
 
     <div class="acg_page-wrapper">
-      <!-- <div class="birthsale-wrapper"><img width="1470" sizes="100vw" alt="" src="images/Birthday-Sale-5_1.avif" loading="lazy" srcset="images/Birthday-Sale-5_1Birthday-Sale-5.avif 500w, images/Birthday-Sale-5_1Birthday-Sale-5.avif 800w, images/Birthday-Sale-5_1Birthday-Sale-5.avif 1080w, images/Birthday-Sale-5_1Birthday-Sale-5.avif 1600w, images/Birthday-Sale-5_1Birthday-Sale-5.avif 2000w, images/Birthday-Sale-5_1Birthday-Sale-5.avif 2600w, images/Birthday-Sale-5_1Birthday-Sale-5.avif 3200w, images/Birthday-Sale-5_1.avif 5880w" class="birthsale-image"><img width="390" sizes="100vw" alt="" src="images/Frame-1430106047-4.avif" loading="lazy" srcset="images/Frame-1430106047-4-p-500.webp 500w, images/Frame-1430106047-4-p-800.webp 800w, images/Frame-1430106047-4-p-1080.webp 1080w, images/Frame-1430106047-4.avif 1559w" class="birthsale-mobile"></div>
-    -->
       <div class="acg_persistantbar-light">
-        <div class="acg_per-padding">
-          <div class="w-layout-blockcontainer acg_container w-container">
-            <div class="acg_persistant-wrapper">
-              <div class="acg_persistant-price">
-                <div class="acg_price acg_black-text">
-                  <span class="text-span-259">Register Now For</span> $99
-                  <span class="text-span-260">$1,999</span>
-                </div>
-                <div class="acg_persistant-time hor">
-                  <div class="acg_offertext acg_black-text">Deadline</div>
-                  <div class="acg_time acg_black-text cur-date">12 May</div>
-                </div>
-              </div>
-              <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
-                >Join Now</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sliding Offer Box</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    body { background:#f8f9fa; }
+
+    /* Bottom sheet container */
+    .offer-sheet {
+      position: fixed;
+      bottom: -300px; /* hidden by default */
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 -4px 15px rgba(0,0,0,.2);
+      transition: bottom 0.4s ease;
+      z-index: 1050;
+    }
+    .offer-sheet.show {
+      bottom: 0;
+    }
+
+    /* Handle bar */
+    .offer-handle {
+      width: 50px;
+      height: 6px;
+      background: #ccc;
+      border-radius: 3px;
+      margin: 8px auto;
+    }
+
+    .offer-header {
+      text-align: center;
+      padding: 5px 15px;
+    }
+    .offer-deadline {
+      font-weight: 600;
+      color: #dc3545;
+    }
+    .offer-date {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .btn-custom {
+      border-radius: 30px;
+      font-weight: 600;
+      padding: 10px 20px;
+      margin: 5px;
+      min-width: 120px;
+    }
+
+    /* Finger icon button (floating trigger) */
+    .offer-trigger {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #007bff;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.3);
+      z-index: 1060;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Trigger Button -->
+
+
+
+<div class="offer-trigger" id="offerTrigger">👆</div>
+
+<!-- Offer Bottom Sheet -->
+<div class="offer-sheet" id="offerSheet">
+  <div class="offer-handle"></div>
+  <div class="offer-header">
+    <div class="offer-deadline">⏳ Deadline</div>
+    <div class="offer-date">12 May</div>
+  </div>
+
+
+
+
+  
+  <div class="text-center   p-4">
+    <a href="https://rzp.io/rzp/PhAVaRu"  data-toggle="modal" data-target="#paymentModal" data-amount="100" data-plan="Demo $1" class="btn btn-danger btn-custom" data-track-cta="true">
+      $99 : Special Class : 6 Weeks  <br/> Join Now
+    </a>
+    <a href="https://rzp.io/rzp/PhAVaRu"  data-toggle="modal" data-target="#paymentModal" data-amount="100" data-plan="Demo $1" class="btn btn-primary btn-custom" data-track-cta="true">
+      $1 Demo Class : 30 Minutes  <br/>  Join Now
+    </a>
+
+    
+  </div>
+
+
+  <br/>
+  <br/>
+</div>
+
+<script>
+  const trigger = document.getElementById("offerTrigger");
+  const sheet = document.getElementById("offerSheet");
+
+  trigger.addEventListener("click", function(){
+    sheet.classList.toggle("show");
+  });
+</script>
+
+
+      
+       </div>
+
+
+
       <div class="acg_main-wrapper">
         <section class="acg_section acg_overflow">
           <div class="acg_chatgpt-light">
@@ -484,6 +592,9 @@
               class="acg_chatgpt-image-light"
             />
           </div>
+
+
+
           <div class="acg_padding-global">
             <div class="w-layout-blockcontainer w-container">
               <div class="acg_hero-wrapper">
@@ -3621,5 +3732,103 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     
   </body>
 
-<!-- Mirrored from course.growthschool.io/ai-chat-gpt by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Aug 2025 09:47:01 GMT -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5 class="modal-title">Complete Your Details</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="userForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Mobile</label>
+            <input type="text" id="mobile" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Country</label>
+            <input type="text" id="country" class="form-control" required>
+          </div>
+          <input type="hidden" id="plan" />
+          <input type="hidden" id="amount" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="rzp-button" class="btn btn-primary btn-block">Pay with Razorpay</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Razorpay checkout script -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  let selectedAmount = 0;
+  let selectedPlan = '';
+
+  $('#paymentModal').on('show.bs.modal', function (event) {
+    const button = $(event.relatedTarget);
+    selectedAmount = button.data('amount');
+    selectedPlan = button.data('plan');
+    $('#plan').val(selectedPlan);
+    $('#amount').val(selectedAmount);
+  });
+
+  document.getElementById('rzp-button').onclick = function(e){
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mobile = document.getElementById('mobile').value;
+    const country = document.getElementById('country').value;
+
+    if(!name || !email || !mobile || !country){
+      alert("Please fill all details.");
+      return;
+    }
+
+    var options = {
+      "key": "rzp_test_123456789", // <-- apna Razorpay key yaha dalna hai
+      "amount": selectedAmount, // amount in paise
+      "currency": "USD",
+      "name": "TPEG Dubai",
+      "description": selectedPlan,
+      "handler": function (response){
+          alert("Payment Successful! Payment ID: " + response.razorpay_payment_id);
+      },
+      "prefill": {
+          "name": name,
+          "email": email,
+          "contact": mobile
+      },
+      "notes": {
+          "country": country,
+          "plan": selectedPlan
+      },
+      "theme": {
+          "color": "#007bff"
+      }
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+  }
+</script>
+
+
+
 </html>

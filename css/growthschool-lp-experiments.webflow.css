@@ -2045,12 +2045,10 @@ figcaption {
 }
 
 .btn {
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
   color: #fff;
   cursor: pointer;
   background-color: #000;
-  border-radius: 32px;
+  border-radius: 6px;
   justify-content: center;
   align-items: center;
   /* width: 400px; */
