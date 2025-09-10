@@ -2201,37 +2201,48 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
- <script>
-  let selectedAmount = 0;
-  let selectedPlan = '';
-  const ExcelscriptURL = "https://script.google.com/macros/s/AKfycbyYb5xuL6zEvyB5Yq5_OH4BZGE4P_gdKFVzvbrLanXU_I4i5t43MIBeE1GsZf7imA8gLg/exec";
-  const EmailscriptURL = "https://script.google.com/macros/s/AKfycbw60K_h3XBd4WQ3rjGIB8GN94CHmhJLqqI8U8YfGoZntz_4M9nGLh_nWitpM9PPqgTzKw/exec";
+<script>
+   let selectedAmount = 0;
+let selectedPlan = '';
 
-  // Modal open होने पर values set करना
-  $('#paymentModal').on('show.bs.modal', function (event) {
-    const button = $(event.relatedTarget);
-    selectedAmount = button.data('amount');
-    selectedPlan = button.data('plan');
-    $('#plan').val(selectedPlan);
-    $('#amount').val(selectedAmount);
-  });
+const ExcelscriptURL = "https://script.google.com/macros/s/AKfycbyYb5xuL6zEvyB5Yq5_OH4BZGE4P_gdKFVzvbrLanXU_I4i5t43MIBeE1GsZf7imA8gLg/exec";
+const EmailscriptURL = "https://script.google.com/macros/s/AKfycbw60K_h3XBd4WQ3rjGIB8GN94CHmhJLqqI8U8YfGoZntz_4M9nGLh_nWitpM9PPqgTzKw/exec";
 
-  // Form submit → पहले Google Sheet save → फिर Email → फिर Razorpay open
-  document.getElementById("userForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
+// Modal open होने पर values set
+$('#paymentModal').on('show.bs.modal', function(event) {
+  const button = $(event.relatedTarget);
+  selectedAmount = button.data('amount');
+  selectedPlan = button.data('plan');
+  $('#plan').val(selectedPlan);
+  $('#amount').val(selectedAmount);
+});
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const mobile = document.getElementById("mobile").value;
-    const country = document.getElementById("country").value;
+document.getElementById("userForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
 
-    if (!name || !email || !mobile || !country) {
-      alert("Please fill all details.");
-      return;
-    }
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const mobile = document.getElementById("mobile").value;
+  const country = document.getElementById("country").value;
+  const plan = document.getElementById("plan").value;
+  const amount = document.getElementById("amount").value;
 
-    try {
-      // 1️⃣ Save data to Google Sheet
+  if (!name || !email || !mobile || !country) {
+    alert("Please fill all details.");
+    return;
+  }
+
+  // Razorpay options
+  var options = {
+    "key": "rzp_test_123456789",
+    "amount": selectedAmount,
+    "currency": "USD",
+    "name": "TPEG Dubai",
+    "description": selectedPlan,
+    "handler": async function(response) {
+      const paymentId = response.razorpay_payment_id;
+
+      // 1️⃣ First → Save data in Sheet
       const sheetForm = new URLSearchParams();
       sheetForm.append("name", name);
       sheetForm.append("email", email);
@@ -2239,57 +2250,39 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
       sheetForm.append("country", country);
       sheetForm.append("plan", selectedPlan);
       sheetForm.append("amount", selectedAmount);
+      sheetForm.append("paymentId", paymentId);
 
-      await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
-      console.log("✅ Data saved in Sheet");
+      try {
+        await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
+        console.log("✅ Data saved in Sheet");
 
-      // 2️⃣ Send Email
-      const emailForm = new URLSearchParams();
-      emailForm.append("name", name);
-      emailForm.append("email", email);
-      emailForm.append("mobile", mobile);
-      emailForm.append("country", country);
-      emailForm.append("plan", selectedPlan);
-      emailForm.append("amount", selectedAmount);
+        // 2️⃣ Then → Send Email
+        const emailForm = new URLSearchParams();
+        emailForm.append("name", name);
+        emailForm.append("email", email);
+        emailForm.append("mobile", mobile);
+        emailForm.append("country", country);
+        emailForm.append("plan", selectedPlan);
+        emailForm.append("amount", selectedAmount);
+        emailForm.append("paymentId", paymentId);
 
-      await fetch(EmailscriptURL, { method: "POST", body: emailForm });
-      console.log("✅ Email sent successfully");
+        await fetch(EmailscriptURL, { method: "POST", body: emailForm });
+        console.log("✅ Email sent successfully");
 
-      // 3️⃣ Razorpay Payment
-      var options = {
-        "key": "rzp_test_123456789", // <-- apna Razorpay key
-        "amount": selectedAmount,    
-        "currency": "USD",
-        "name": "TPEG Dubai",
-        "description": selectedPlan,
-        "handler": function (response) {
-          alert("✅ Payment Successful! Payment ID: " + response.razorpay_payment_id);
-          document.getElementById("userForm").reset();
+        alert("✅ Payment Successful! Data saved & Email sent.");
+        document.getElementById("userForm").reset();
+      } catch(err) {
+        alert("❌ Error: " + err);
+      }
+    },
+    "prefill": { "name": name, "email": email, "contact": mobile },
+    "notes": { "country": country, "plan": selectedPlan },
+    "theme": { "color": "#007bff" }
+  };
 
-          // Optional: Payment ID ko bhi Email Web App ke liye send कर सकते हो
-          // (उदाहरण के लिए response.razorpay_payment_id)
-        },
-        "prefill": {
-          "name": name,
-          "email": email,
-          "contact": mobile
-        },
-        "notes": {
-          "country": country,
-          "plan": selectedPlan
-        },
-        "theme": {
-          "color": "#007bff"
-        }
-      };
-
-      var rzp1 = new Razorpay(options);
-      rzp1.open();
-
-    } catch (err) {
-      alert("❌ Error: " + err);
-    }
-  });
+  var rzp1 = new Razorpay(options);
+  rzp1.open();
+});
 </script>
 
 

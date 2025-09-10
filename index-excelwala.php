@@ -2201,11 +2201,10 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
- <script>
+<script>
   let selectedAmount = 0;
   let selectedPlan = '';
-  const ExcelscriptURL = "https://script.google.com/macros/s/AKfycbyYb5xuL6zEvyB5Yq5_OH4BZGE4P_gdKFVzvbrLanXU_I4i5t43MIBeE1GsZf7imA8gLg/exec";
-  const EmailscriptURL = "https://script.google.com/macros/s/AKfycbw60K_h3XBd4WQ3rjGIB8GN94CHmhJLqqI8U8YfGoZntz_4M9nGLh_nWitpM9PPqgTzKw/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyYb5xuL6zEvyB5Yq5_OH4BZGE4P_gdKFVzvbrLanXU_I4i5t43MIBeE1GsZf7imA8gLg/exec";
 
   // Modal open होने पर values set करना
   $('#paymentModal').on('show.bs.modal', function (event) {
@@ -2216,7 +2215,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     $('#amount').val(selectedAmount);
   });
 
-  // Form submit → पहले Google Sheet save → फिर Email → फिर Razorpay open
+  // Form submit → पहले Google Sheet save → फिर Razorpay open
   document.getElementById("userForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
@@ -2225,37 +2224,28 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     const mobile = document.getElementById("mobile").value;
     const country = document.getElementById("country").value;
 
+    const plan = document.getElementById("plan").value;
+    const amount = document.getElementById("amount").value;
+
+
     if (!name || !email || !mobile || !country) {
       alert("Please fill all details.");
       return;
     }
 
     try {
-      // 1️⃣ Save data to Google Sheet
-      const sheetForm = new URLSearchParams();
-      sheetForm.append("name", name);
-      sheetForm.append("email", email);
-      sheetForm.append("mobile", mobile);
-      sheetForm.append("country", country);
-      sheetForm.append("plan", selectedPlan);
-      sheetForm.append("amount", selectedAmount);
+      // Save to Google Sheet using form-data (NO CORS ISSUE 🚀)
+      const formData = new URLSearchParams();
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("mobile", mobile);
+      formData.append("country", country);
+      formData.append("plan", selectedPlan);
+      formData.append("amount", selectedAmount);
 
-      await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
-      console.log("✅ Data saved in Sheet");
+      await fetch(scriptURL, { method: "POST", body: formData });
 
-      // 2️⃣ Send Email
-      const emailForm = new URLSearchParams();
-      emailForm.append("name", name);
-      emailForm.append("email", email);
-      emailForm.append("mobile", mobile);
-      emailForm.append("country", country);
-      emailForm.append("plan", selectedPlan);
-      emailForm.append("amount", selectedAmount);
-
-      await fetch(EmailscriptURL, { method: "POST", body: emailForm });
-      console.log("✅ Email sent successfully");
-
-      // 3️⃣ Razorpay Payment
+      // Razorpay integration
       var options = {
         "key": "rzp_test_123456789", // <-- apna Razorpay key
         "amount": selectedAmount,    
@@ -2265,9 +2255,6 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
         "handler": function (response) {
           alert("✅ Payment Successful! Payment ID: " + response.razorpay_payment_id);
           document.getElementById("userForm").reset();
-
-          // Optional: Payment ID ko bhi Email Web App ke liye send कर सकते हो
-          // (उदाहरण के लिए response.razorpay_payment_id)
         },
         "prefill": {
           "name": name,
@@ -2282,7 +2269,6 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
           "color": "#007bff"
         }
       };
-
       var rzp1 = new Razorpay(options);
       rzp1.open();
 
