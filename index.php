@@ -2225,6 +2225,14 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     const mobile = document.getElementById("mobile").value;
     const country = document.getElementById("country").value;
 
+    const plan = document.getElementById("plan").value;
+    const amount = document.getElementById("amount").value;
+
+      const amountUSD = document.getElementById("amount").value; 
+      const conversionRate = 83; // 1 USD = 83 INR
+      const amountINR = amountUSD * conversionRate * 100; // Razorpay ko paise me (cents) chahiye
+      const amountCents = amountUSD * 100; // USD ke cents me
+
     if (!name || !email || !mobile || !country) {
       alert("Please fill all details.");
       return;
@@ -2240,6 +2248,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
       sheetForm.append("plan", selectedPlan);
       sheetForm.append("amount", selectedAmount);
 
+
       await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
       console.log("✅ Data saved in Sheet");
 
@@ -2250,17 +2259,19 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
       emailForm.append("mobile", mobile);
       emailForm.append("country", country);
       emailForm.append("plan", selectedPlan);
-      emailForm.append("amount", selectedAmount);
+      emailForm.append("amount", amountINR);
 
       await fetch(EmailscriptURL, { method: "POST", body: emailForm });
       console.log("✅ Email sent successfully");
 
+    
+
       // 3️⃣ Razorpay Payment
       var options = {
-        "key": "rzp_test_123456789", // <-- apna Razorpay key
-        "amount": selectedAmount,    
+        "key": "rzp_live_MLkl6FvJYXO1qh", // <-- apna Razorpay key
+        "amount": amountCents,    
         "currency": "USD",
-        "name": "TPEG Dubai",
+        "name": "AI 4",
         "description": selectedPlan,
         "handler": function (response) {
           alert("✅ Payment Successful! Payment ID: " + response.razorpay_payment_id);
