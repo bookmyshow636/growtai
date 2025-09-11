@@ -2205,7 +2205,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
 <script>
   let selectedAmount = 0;
   let selectedPlan = '';
-  const ExcelscriptURL = "https://script.google.com/macros/s/AKfycbwjQDVrVVxtQaNsfeL2dW4Z2L5bjBjvpPUwzF9isLU3Wlj4Z-wMYBA9v-NvoFVWX8ldqw/exec";
+  const ExcelscriptURL = "https://script.google.com/macros/s/AKfycbyYb5xuL6zEvyB5Yq5_OH4BZGE4P_gdKFVzvbrLanXU_I4i5t43MIBeE1GsZf7imA8gLg/exec";
   const EmailscriptURL = "https://script.google.com/macros/s/AKfycbw60K_h3XBd4WQ3rjGIB8GN94CHmhJLqqI8U8YfGoZntz_4M9nGLh_nWitpM9PPqgTzKw/exec";
 
   // Modal open होने पर values set करना
@@ -2225,6 +2225,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     const email = document.getElementById("email").value;
     const mobile = document.getElementById("mobile").value;
     const country = document.getElementById("country").value;
+
     const amountUSD = document.getElementById("amount").value; 
     const amountCents = amountUSD * 100; // USD cents me
 
@@ -2242,13 +2243,12 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
       sheetForm.append("country", country);
       sheetForm.append("plan", selectedPlan);
       sheetForm.append("amount", amountUSD);
-      sheetForm.append("payment_id", '');
       sheetForm.append("status", "INITIATED");
 
       await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
       console.log("✅ Lead saved in Sheet");
 
-      // 2️⃣ Razorpay Payment  rzp_test_NYV2fmAamNENSP  
+      // 2️⃣ Razorpay Payment
       var options = {
         "key": "rzp_live_MLkl6FvJYXO1qh",
         "amount": amountCents,
