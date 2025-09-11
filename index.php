@@ -2201,7 +2201,8 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
- <script>
+
+<script>
   let selectedAmount = 0;
   let selectedPlan = '';
   const ExcelscriptURL = "https://script.google.com/macros/s/AKfycbyYb5xuL6zEvyB5Yq5_OH4BZGE4P_gdKFVzvbrLanXU_I4i5t43MIBeE1GsZf7imA8gLg/exec";
@@ -2216,7 +2217,7 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     $('#amount').val(selectedAmount);
   });
 
-  // Form submit → पहले Google Sheet save → फिर Email → फिर Razorpay open
+  // Form submit
   document.getElementById("userForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
@@ -2225,13 +2226,8 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     const mobile = document.getElementById("mobile").value;
     const country = document.getElementById("country").value;
 
-    const plan = document.getElementById("plan").value;
-    const amount = document.getElementById("amount").value;
-
-      const amountUSD = document.getElementById("amount").value; 
-      const conversionRate = 83; // 1 USD = 83 INR
-      const amountINR = amountUSD * conversionRate * 100; // Razorpay ko paise me (cents) chahiye
-      const amountCents = amountUSD * 100; // USD ke cents me
+    const amountUSD = document.getElementById("amount").value; 
+    const amountCents = amountUSD * 100; // USD cents me
 
     if (!name || !email || !mobile || !country) {
       alert("Please fill all details.");
@@ -2239,46 +2235,57 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     }
 
     try {
-      // 1️⃣ Save data to Google Sheet
+      // 1️⃣ First Save Lead in Excel
       const sheetForm = new URLSearchParams();
       sheetForm.append("name", name);
       sheetForm.append("email", email);
       sheetForm.append("mobile", mobile);
       sheetForm.append("country", country);
       sheetForm.append("plan", selectedPlan);
-      sheetForm.append("amount", selectedAmount);
-
+      sheetForm.append("amount", amountUSD);
+      sheetForm.append("status", "INITIATED");
 
       await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
-      console.log("✅ Data saved in Sheet");
+      console.log("✅ Lead saved in Sheet");
 
-      // 2️⃣ Send Email
-      const emailForm = new URLSearchParams();
-      emailForm.append("name", name);
-      emailForm.append("email", email);
-      emailForm.append("mobile", mobile);
-      emailForm.append("country", country);
-      emailForm.append("plan", selectedPlan);
-      emailForm.append("amount", amountINR);
-
-      await fetch(EmailscriptURL, { method: "POST", body: emailForm });
-      console.log("✅ Email sent successfully");
-
-    
-
-      // 3️⃣ Razorpay Payment
+      // 2️⃣ Razorpay Payment
       var options = {
-        "key": "rzp_live_MLkl6FvJYXO1qh", // <-- apna Razorpay key
-        "amount": amountCents,    
+        "key": "rzp_live_MLkl6FvJYXO1qh",
+        "amount": amountCents,
         "currency": "USD",
         "name": "AI 4",
         "description": selectedPlan,
-        "handler": function (response) {
+        "handler": async function (response) {
           alert("✅ Payment Successful! Payment ID: " + response.razorpay_payment_id);
-          document.getElementById("userForm").reset();
 
-          // Optional: Payment ID ko bhi Email Web App ke liye send कर सकते हो
-          // (उदाहरण के लिए response.razorpay_payment_id)
+          // 3️⃣ Send Email after successful payment
+          const emailForm = new URLSearchParams();
+          emailForm.append("name", name);
+          emailForm.append("email", email);
+          emailForm.append("mobile", mobile);
+          emailForm.append("country", country);
+          emailForm.append("plan", selectedPlan);
+          emailForm.append("amount", amountUSD);
+          emailForm.append("payment_id", response.razorpay_payment_id);
+
+          await fetch(EmailscriptURL, { method: "POST", body: emailForm });
+          console.log("✅ Email sent successfully");
+
+          // 4️⃣ Add another row in Excel with Payment Status
+          const paymentForm = new URLSearchParams();
+          paymentForm.append("name", name);
+          paymentForm.append("email", email);
+          paymentForm.append("mobile", mobile);
+          paymentForm.append("country", country);
+          paymentForm.append("plan", selectedPlan);
+          paymentForm.append("amount", amountUSD);
+          paymentForm.append("payment_id", response.razorpay_payment_id);
+          paymentForm.append("status", "PAID");
+
+          await fetch(ExcelscriptURL, { method: "POST", body: paymentForm });
+          console.log("✅ Payment saved in Sheet");
+
+          document.getElementById("userForm").reset();
         },
         "prefill": {
           "name": name,
@@ -2302,8 +2309,6 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
     }
   });
 </script>
-
-
 
    </body>
 
