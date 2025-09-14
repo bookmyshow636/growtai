@@ -2368,9 +2368,9 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
       await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
       console.log("✅ Lead saved in Sheet");
 
-      // 2️⃣ Razorpay Payment     Planofy rzp_live_MLkl6FvJYXO1qh     TpegInter:rzp_live_RGFoLUqdBitXl9
+      // 2️⃣ Razorpay Payment rzp_test_NYV2fmAamNENSP    Planofy      TpegInter:rzp_live_RGFoLUqdBitXl9
       var options = {
-        "key": "rzp_test_NYV2fmAamNENSP",
+        "key": "rzp_live_MLkl6FvJYXO1qh",
         "amount": amountCents,
         "currency": "USD",
         "name": "AI 4",
