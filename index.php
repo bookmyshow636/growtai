@@ -523,13 +523,132 @@ font-weight: 600;
                     <div class="text-block-442" id="event-time-2"></div>
                   </div>
                 </div>
-           <video id="myVideo" src="video-manav-sir.mp4" controls style="max-width:100%; height:auto;"></video>
+
+          <!-- HTML -->
+<style>
+  .video-placeholder {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* maintain aspect ratio (16:9) — adjust padding-bottom as needed */
+  .video-placeholder .thumb {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .play-button:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 18px solid white;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+  }
+
+  /* style for inserted video */
+  .lazy-video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>
+
+<!-- Progressive enhancement: non-JS users can still click the link to open the video file -->
+<noscript>
+  <a href="video-manav-sir.mp4" target="_blank">Open video (no JS)</a>
+</noscript>
+
+<!-- Placeholder that will be replaced with <video> when clicked -->
+<div id="videoWrapper" class="video-placeholder" role="button" aria-label="Play video" tabindex="0" data-video-src="video-manav-sir.mp4">
+  <img src="videoai.jpeg" alt="Video preview" class="thumb" />
+  <div class="play-button" aria-hidden="true"></div>
+</div>
 
 <script>
-  document.addEventListener("click", function() {
-    document.getElementById("myVideo").play();
-  });
+  (function () {
+    const wrapper = document.getElementById('videoWrapper');
+    if (!wrapper) return;
+
+    // Make sure video is not requested until user interacts
+    const videoSrc = wrapper.getAttribute('data-video-src');
+
+    function loadVideoAndPlay() {
+      // prevent multiple clicks creating multiple video elements
+      if (wrapper.dataset.loaded === 'true') {
+        // If already loaded, try to play (in case paused)
+        const existing = wrapper.querySelector('video');
+        if (existing && typeof existing.play === 'function') existing.play();
+        return;
+      }
+
+      // Create video element
+      const v = document.createElement('video');
+      v.className = 'lazy-video';
+      v.setAttribute('controls', '');
+      v.setAttribute('playsinline', ''); // mobile inline playback
+      v.setAttribute('preload', 'none'); // IMPORTANT: don't preload on page load
+      v.setAttribute('aria-label', 'Video player');
+
+      // Create source element
+      const src = document.createElement('source');
+      src.src = videoSrc;
+      // Optional: set type if known, e.g. 'video/mp4'
+      src.type = 'video/mp4';
+
+      v.appendChild(src);
+
+      // Replace placeholder contents with the video element
+      wrapper.innerHTML = '';
+      wrapper.appendChild(v);
+
+      wrapper.dataset.loaded = 'true';
+
+      // Try to play after user interaction — should succeed because it's a click
+      const playPromise = v.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err) => {
+          // autoplay might still be blocked; that's okay — user can click play
+          console.warn('Video play prevented:', err);
+        });
+      }
+    }
+
+    // click and keyboard (Enter / Space) support for accessibility
+    wrapper.addEventListener('click', function (e) {
+      e.preventDefault();
+      loadVideoAndPlay();
+    });
+
+    wrapper.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        loadVideoAndPlay();
+      }
+    });
+  })();
 </script>
+
 
 
                 <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
@@ -2206,7 +2325,8 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
   let selectedAmount = 0;
   let selectedPlan = '';
   const ExcelscriptURL = "https://script.google.com/macros/s/AKfycbwjQDVrVVxtQaNsfeL2dW4Z2L5bjBjvpPUwzF9isLU3Wlj4Z-wMYBA9v-NvoFVWX8ldqw/exec";
-  const EmailscriptURL = "https://script.google.com/macros/s/AKfycbw60K_h3XBd4WQ3rjGIB8GN94CHmhJLqqI8U8YfGoZntz_4M9nGLh_nWitpM9PPqgTzKw/exec";
+  const EmailscriptURL="https://script.google.com/macros/s/AKfycbwO3sLxRNd4Hn1G3FHUyrPlA8rqR6tmnCVDE8m6xmjyPaW3Ue0toYUAeFKl1x6wjcW53g/exec";
+  //const EmailscriptURL = "https://script.google.com/macros/s/AKfycbw60K_h3XBd4WQ3rjGIB8GN94CHmhJLqqI8U8YfGoZntz_4M9nGLh_nWitpM9PPqgTzKw/exec";
 
   // Modal open होने पर values set करना
   $('#paymentModal').on('show.bs.modal', function (event) {
@@ -2248,9 +2368,9 @@ Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keepi
       await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
       console.log("✅ Lead saved in Sheet");
 
-      // 2️⃣ Razorpay Payment   rzp_test_NYV2fmAamNENSP  Planofy rzp_live_MLkl6FvJYXO1qh     TpegInter:rzp_live_RGFoLUqdBitXl9
+      // 2️⃣ Razorpay Payment     Planofy rzp_live_MLkl6FvJYXO1qh     TpegInter:rzp_live_RGFoLUqdBitXl9
       var options = {
-        "key": "rzp_live_RGFoLUqdBitXl9",
+        "key": "rzp_test_NYV2fmAamNENSP",
         "amount": amountCents,
         "currency": "USD",
         "name": "AI 4",
