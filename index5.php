@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<!--  Last Published: Wed Sep 18 2024 12:03:53 GMT+0000 (Coordinated Universal Time)  -->
+<html
+  data-wf-page="65d8409f7ab109fb0986b2cc"
+  data-wf-site="63c698560a57ab3deb917f5a"
+>
+  
+<!-- Mirrored from course.growthschool.io/ai-chat-gpt by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Aug 2025 09:47:01 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>AI &amp; ChatGPT Light</title>
+    <meta name="robots" content="noindex,nofollow,noarchive" />
+    <meta content="AI &amp; ChatGPT Light" property="og:title" />
+    <meta content="AI &amp; ChatGPT Light" property="twitter:title" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- WOW JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="./css/webflow.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./css/growthschool-lp-experiments.webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="https://fonts.googleapis.com/" rel="preconnect" />
+    <link
+      href="https://fonts.gstatic.com/"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/mastermind-long1.css" />
+    <link
+      rel="stylesheet"
+      href="css/mastermind-long2.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;family=Spline+Sans:wght@300..700&amp;display=swap"
+      rel="stylesheet"
+    />
+  
+  <style>
+
+    .acg_chatgpt-light{
+
+    position: absolute;
+    top: 230px;
+    right: -190px;
+    width: 453px;
+    height: 420px;
+    /* background-image: url(images/icon-plane-6.png); */
+    animation: 20s linear 0s infinite normal none running fa-spin;
+}
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7fff9;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    /* Navbar */
+    .navbar {
+      background: #4c7df1;
+    }
+    .navbar .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+    .navbar .nav-link:hover {
+      color: #1226a9ff !important;
+    }
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #4c7df1, #683db6);
+      padding: 120px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .btn-custom {
+      background: #1824c5ff;
+      color: #fff;
+      border-radius: 30px;
+      padding: 12px 30px;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background: #002b14;
+      color: #fff;
+    }
+    /* Section */
+    .section {
+      padding: 90px 20px;
+    }
+    .section-dark {
+      background: #0a0a0a;
+      color: #fff;
+    }
+    .icon-box {
+      padding: 30px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+    .icon-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 12px 30px rgba(0,204,102,0.3);
+    }
+    .icon-box i {
+      font-size: 40px;
+      color: #002cb3;
+      margin-bottom: 15px;
+    }
+    /* Pricing */
+    .pricing {
+      border: 2px solid #2b0ba9ff;
+      border-radius: 20px;
+      padding: 40px 20px;
+      background: #fff;
+      transition: 0.4s;
+    }
+    .pricing:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 30px rgba(38, 24, 187, 0.3);
+    }
+    /* Footer */
+    footer {
+      background: #002b14;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  </style>
+
+   
+
+  </head>
+  <body class="body-white">
+    <style>
+      .marquee-container-unique {
+        width: 100%;
+        overflow: hidden;
+        background-color: #b22222; /* Red background */
+        position: fixed;
+        z-index: 1000;
+      }
+
+      .marquee-content-unique {
+        display: flex;
+        animation: scroll-unique 30s linear infinite;
+        white-space: nowrap;
+        padding: 10px;
+      }
+
+      .marquee-text-unique {
+        color: #fff700; /* Yellow text */
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+        display: inline-block;
+        font-family: IBM Plex Sans Condensed, sans-serif;
+      }
+
+      .marquee-highlight-unique {
+        color: white; /* White text */
+      }
+
+      @keyframes scroll-unique {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* Ensure enough width for seamless scrolling */
+      .marquee-content-unique {
+        min-width: 200%; /* Twice the width for duplication */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .marquee-text-unique {
+          font-size: 1.2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .marquee-text-unique {
+          font-size: 1rem;
+        }
+      }
+    </style>
+
+    <div class="marquee-container-unique">
+      <div class="marquee-content-unique">
+   
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+    
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+        <p class="marquee-text-unique">
+          ★ <span class="marquee-highlight-unique">Limited Period Offer</span> ★ Flat
+          90% Off ★ &nbsp; &nbsp; &nbsp;
+        </p>
+      </div>
+    </div>
+
+    <div class="acg_page-wrapper">
+      <div class="acg_persistantbar-light">
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sliding Offer Box</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <style>
+    body { background:#f8f9fa; }
+
+    /* Bottom sheet container */
+    .offer-sheet {
+      position: fixed;
+      bottom: -300px; /* hidden by default */
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0 -4px 15px rgba(0,0,0,.2);
+      transition: bottom 0.4s ease;
+      z-index: 1050;
+    }
+    .offer-sheet.show {
+      bottom: 0;
+    }
+
+    /* Handle bar */
+    .offer-handle {
+      width: 50px;
+      height: 6px;
+      background: #ccc;
+      border-radius: 3px;
+      margin: 8px auto;
+    }
+
+    .offer-header {
+      text-align: center;
+      padding: 5px 15px;
+    }
+    .offer-deadline {
+      font-weight: 600;
+      color: #dc3545;
+    }
+    .offer-date {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .btn-custom {
+      border-radius: 30px;
+      font-weight: 600;
+      padding: 10px 20px;
+      margin: 5px;
+      min-width: 120px;
+    }
+
+    /* Finger icon button (floating trigger) */
+    .offer-trigger {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #007bff;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.3);
+      z-index: 1060;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Trigger Button -->
+
+
+
+<div class="offer-trigger" id="offerTrigger">👆</div>
+
+<!-- Offer Bottom Sheet -->
+<div class="offer-sheet" id="offerSheet">
+  <div class="offer-handle"></div>
+  <div class="offer-header">
+    <!-- <div class="offer-deadline">⏳ Deadline</div> -->
+    <div class="offer-date">12 May</div>
+  </div>
+
+
+
+
+  
+  <div class="text-center   p-4">
+    <a href="https://rzp.io/rzp/PhAVaRu"  data-toggle="modal" data-target="#paymentModal" data-amount="99" data-plan="Basic $99" class="btn btn-danger btn-custom" data-track-cta="true">
+      $99 : Special Class : 6 Weeks  <br/> Join Now
+    </a>
+    <a href="https://rzp.io/rzp/PhAVaRu"  data-toggle="modal" data-target="#paymentModal" data-amount="1" data-plan="Demo $1" class="btn btn-primary btn-custom" data-track-cta="true">
+      $1 Demo Class : 30 Minutes  <br/>  Join Now
+    </a>
+
+    
+  </div>
+
+
+  <br/>
+  <br/>
+</div>
+
+<script>
+  const trigger = document.getElementById("offerTrigger");
+  const sheet = document.getElementById("offerSheet");
+
+  trigger.addEventListener("click", function(){
+    sheet.classList.toggle("show");
+  });
+</script>
+
+
+      
+       </div>
+
+
+
+      <div class="acg_main-wrapper">
+        <section class="acg_section acg_overflow">
+          <div class="acg_chatgpt-light">
+            <img
+              src="https://course.growthschool.io/images/Frame-349.png"
+              loading="lazy"
+         
+              alt=""
+              class="acg_chatgpt-image-light"
+            />
+          </div>
+
+
+
+          <div class="acg_padding-global">
+            <div class="w-layout-blockcontainer w-container">
+              <div class="acg_hero-wrapper">
+                <img
+                  src="Human_Tech-removebg-preview.png"
+                  loading="lazy"
+                
+                  alt=""
+                  class="image-541 newlogo"
+                />
+               <h1 class="acg_heading acg_black-text width-reduce">
+                  Learn
+                <span class="acg_linear-gradient">25+ AI Tools</span> to Supercharge Your Growth
+                 Productivity, and Success.
+                </h1>
+
+<style>
+  .newdd{
+    margin-top: -30px;
+  }
+  .aiw{
+    color:green;
+font-weight: 600;
+  }
+  @media (max-width: 768px) {
+      .newdd{
+    margin-top: -20px;
+  }
+  .newblock{
+    height:50px;
+  }
+  .newlogo{
+    width: 220px;
+  }
+  }
+</style>
+
+
+                <div class="acg_subhead acg_black-text">
+
+                In this hands-on <span class="aiw">AI workshop </span>, you’ll learn how to use AI to save time, create content quickly, automate tasks, and build apps—skills that make you stand out in any career.
+
+
+                </div>
+                <div class="date">
+                  <div class="course-date-black newblock">
+                    <img
+                      src="https://course.growthschool.io/images/calendar.svg"
+                      loading="lazy"
+                      width="18"
+                      alt=""
+                    />
+                    <div class="text-block-442" id="event-date-1"></div>
+                  </div>
+                  <div class="course-date-black newblock">
+                    <img
+                      src="https://course.growthschool.io/images/clock.svg"
+                      loading="lazy"
+                      width="17"
+                      alt=""
+                    />
+                    <div class="text-block-442" id="event-time-1"></div>
+                  </div>
+                </div>
+
+                 <section class="hero ">
+                  <div class="icon-lines"></div>
+    <div class="container text-center">
+      <h1 class="animate__animated animate__fadeInDown" style="color:white">Artificial Intelligence for Global Professionals</h1>
+      <p class="animate__animated animate__fadeInUp mt-3 " style="color:white">Learn in <b>12 Weeks</b> → Earn for <b>12 Years</b></p>
+
+      <p style="text-align: center;     margin-left: 167px;">
+      <a href="#pricing" class="btn btn-custom mt-4 animate__animated animate__bounceIn" style="color:white; background: #333">Book $1 Demo Now</a>
+      </p>
+
+    </div>
+  </section>
+
+  <style>.icon-lines {
+        margin-left: -19px;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    position: absolute;
+    background-image: url(icon-lines.png);
+    background-color: #3333334a;
+    animation: fa-spin 50s infinite linear;
+}</style>
+
+                  <div class="date newdd">
+
+
+
+
+                  <div class="course-date-black newblock">
+                    <img
+                      src="https://course.growthschool.io/images/calendar.svg"
+                      loading="lazy"
+                      width="18"
+                      alt=""
+                    />
+                    <div class="text-block-442" id="event-date-2"> </div>
+                  </div>
+                  <div class="course-date-black newblock">
+                    <img
+                      src="https://course.growthschool.io/images/clock.svg"
+                      loading="lazy"
+                      width="17"
+                      alt=""
+                    />
+                    <div class="text-block-442" id="event-time-2"></div>
+                  </div>
+                </div>
+
+          <!-- HTML -->
+<style>
+  .video-placeholder {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* maintain aspect ratio (16:9) — adjust padding-bottom as needed */
+  .video-placeholder .thumb {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .play-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .play-button:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 18px solid white;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+  }
+
+  /* style for inserted video */
+  .lazy-video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>
+
+<!-- Progressive enhancement: non-JS users can still click the link to open the video file -->
+<noscript>
+  <a href="video-manav-sir.mp4" target="_blank">Open video (no JS)</a>
+</noscript>
+
+<!-- Placeholder that will be replaced with <video> when clicked -->
+<div id="videoWrapper" class="video-placeholder" role="button" aria-label="Play video" tabindex="0" data-video-src="video-manav-sir.mp4">
+  <img src="videoai.jpeg" alt="Video preview" class="thumb" />
+  <div class="play-button" aria-hidden="true"></div>
+</div>
+
+<script>
+  (function () {
+    const wrapper = document.getElementById('videoWrapper');
+    if (!wrapper) return;
+
+    // Make sure video is not requested until user interacts
+    const videoSrc = wrapper.getAttribute('data-video-src');
+
+    function loadVideoAndPlay() {
+      // prevent multiple clicks creating multiple video elements
+      if (wrapper.dataset.loaded === 'true') {
+        // If already loaded, try to play (in case paused)
+        const existing = wrapper.querySelector('video');
+        if (existing && typeof existing.play === 'function') existing.play();
+        return;
+      }
+
+      // Create video element
+      const v = document.createElement('video');
+      v.className = 'lazy-video';
+      v.setAttribute('controls', '');
+      v.setAttribute('playsinline', ''); // mobile inline playback
+      v.setAttribute('preload', 'none'); // IMPORTANT: don't preload on page load
+      v.setAttribute('aria-label', 'Video player');
+
+      // Create source element
+      const src = document.createElement('source');
+      src.src = videoSrc;
+      // Optional: set type if known, e.g. 'video/mp4'
+      src.type = 'video/mp4';
+
+      v.appendChild(src);
+
+      // Replace placeholder contents with the video element
+      wrapper.innerHTML = '';
+      wrapper.appendChild(v);
+
+      wrapper.dataset.loaded = 'true';
+
+      // Try to play after user interaction — should succeed because it's a click
+      const playPromise = v.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((err) => {
+          // autoplay might still be blocked; that's okay — user can click play
+          console.warn('Video play prevented:', err);
+        });
+      }
+    }
+
+    // click and keyboard (Enter / Space) support for accessibility
+    wrapper.addEventListener('click', function (e) {
+      e.preventDefault();
+      loadVideoAndPlay();
+    });
+
+    wrapper.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        loadVideoAndPlay();
+      }
+    });
+  })();
+</script>
+
+
+
+                <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
+                  >Join Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="acg_section acg_overflow">
+          <div class="acg_chatgpt-small-light">
+            <img
+              src="https://course.growthschool.io/images/Frame-1430104824.png"
+              loading="lazy"
+              alt=""
+              class="acg_chatgpt-image-small-light"
+            />
+          </div>
+
+
+
+
+ 
+        </section>
+
+ <section class="section text-center" id="about">
+    <div class="container">
+      <h2 class="mb-4 wow fadeInUp">Why Choose TPEG AI Courses?</h2>
+      <p class="mb-5">Make your weekends fruitful with AI learning that empowers you globally.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="icon-box wow zoomIn">
+            <i class="fas fa-globe"></i>
+            <h5>Local to Global</h5>
+            <p>Learn skills that make you competitive worldwide.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box wow zoomIn">
+            <i class="fas fa-bolt"></i>
+            <h5>Fast-Track Performance</h5>
+            <p>Use AI tools to solve daily & work challenges instantly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="icon-box wow zoomIn">
+            <i class="fas fa-certificate"></i>
+            <h5>Certified Training</h5>
+            <p>TPEG Dubai & American Academy of Management USA Certification.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Courses -->
+  <section class="section section-dark text-center" id="courses">
+    <div class="container">
+      <h2 class="mb-5 wow fadeInUp">Who Can Join?</h2>
+      <div class="row g-4">
+        <div class="col-md-3 "><div class="icon-box wow fadeInUp"><i class="fas fa-user-tie"></i><p style="color: #0a0a0a;">Business Owners</p></div></div>
+        <div class="col-md-3"><div class="icon-box wow fadeInUp"><i class="fas fa-briefcase"></i><p style="color: #0a0a0a;">Working Professionals</p></div></div>
+        <div class="col-md-3"><div class="icon-box wow fadeInUp"><i class="fas fa-user-graduate"></i><p style="color: #0a0a0a;">Students</p></div></div>
+        <div class="col-md-3"><div class="icon-box wow fadeInUp"><i class="fas fa-home"></i><p style="color: #0a0a0a;">Housewives</p></div></div>
+      </div>
+      <p class="mt-4">AI for Sales • Marketing • Operations • HR • Personal Life</p>
+    </div>
+  </section>
+
+  
+
+
+
+
+        <section class="acg_section acg_overflow">
+          <div class="acg_padding-global">
+            <div class="w-layout-blockcontainer w-container">
+              <div class="acg_learners-wrapper">
+                <div class="acg_heading-h2-wrapper">
+                  <h2 class="acg_heading-h2 acg_black-text">
+                    Over
+                    <span class="acg_linear-gradient-h2"
+                      >2 Million+ Learners worldwide</span
+                    >
+                     have already become AI-powered professionals—now it’s your turn.
+                  </h2>
+                </div>
+                <div class="acg_learners-marquee-wrap">
+                  <div
+                    style="
+                      -webkit-transform: translate3d(-11%, 0, 0)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      -moz-transform: translate3d(-11%, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                      -ms-transform: translate3d(-11%, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                      transform: translate3d(-11%, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    "
+                    class="acg_marquee_left"
+                  >
+                    <div class="acg_marquee">
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Salesforce.com_logo-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Nader-Balata-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Google_2015_logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/candice-denic-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/image-31-1.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Simone-Grisorio_-1_2.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Google_2015_logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Gaston-Tourn-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Google_2015_logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/mentor-1-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Spotify_logo_with_text-1-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Dejan-Krstic-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Logo-Tinder.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Christine-Itwaru_-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/image-31-4.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Son-Ca-Vu-1.webp" alt="" />
+                      </div>
+                    </div>
+                    <div class="acg_marquee">
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Salesforce.com_logo-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Nader-Balata-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Google_2015_logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/candice-denic-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/image-31-1.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Simone-Grisorio_-1_2.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Google_2015_logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Gaston-Tourn-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Google_2015_logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/mentor-1-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Spotify_logo_with_text-1-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Dejan-Krstic-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Logo-Tinder.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Christine-Itwaru_-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/image-31-4.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Son-Ca-Vu-1.webp" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      -webkit-transform: translate3d(-47%, 0, 0)
+                        scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                        skew(0, 0);
+                      -moz-transform: translate3d(-47%, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                      -ms-transform: translate3d(-47%, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                      transform: translate3d(-47%, 0, 0) scale3d(1, 1, 1)
+                        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    "
+                    class="acg_marquee_right"
+                  >
+                    <div class="acg_marquee">
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Amazon_logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Tzuan-Huang_-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Microsoft-Logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/mentor-2-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/image-31-5.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Nikki-Elbaz-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Spotify_logo_with_text-1-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Helena-Buhr-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/canva-ar21.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Pius-Binder-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Spotify_logo_with_text-1-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Dejan-Krstic-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Rectangle-112.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Malin-Perera-1.png" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Atlassian-logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Mauricio-Franzoni_-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Meta_Platforms_Inc._logo-1-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Francis-Odeyemi-1.webp" alt="" />
+                      </div>
+                    </div>
+                    <div class="acg_marquee">
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Amazon_logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Tzuan-Huang_-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Microsoft-Logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/mentor-2-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/image-31-5.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Nikki-Elbaz-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Spotify_logo_with_text-1-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Helena-Buhr-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/canva-ar21.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Pius-Binder-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Spotify_logo_with_text-1-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Dejan-Krstic-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Rectangle-112.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Malin-Perera-1.png" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Atlassian-logo.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Mauricio-Franzoni_-1.webp" alt="" />
+                      </div>
+                      <div class="acg_learner acg_learner-bdr">
+                        <img
+                          src="https://course.growthschool.io/images/Meta_Platforms_Inc._logo-1-1.svg"
+                          loading="lazy"
+                          alt=""
+                          class="acg_learner-logo"
+                        /><img src="https://course.growthschool.io/images/Francis-Odeyemi-1.webp" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+ 
+
+
+          <!-- Pricing -->
+  <section class="section text-center" id="pricing">
+    <div class="container-fluid">
+      <h2 class="mb-4 wow fadeInUp">Affordable Pricing</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="pricing wow pulse">
+            <h3>AI Basics - 06 Weeks</h3>
+            <h2 class="my-3">$99</h2>
+            <p>06 Weeks of Learning → 12 Years of Earning</p>
+            <a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-custom mt-3">Enroll Now</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="pricing wow pulse">
+            <h3>30 Min Demo</h3>
+            <h2 class="my-3">$1</h2>
+            <p>Fix your 30 Min Demo Session at just $1</p>
+            <a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-custom mt-3">Book Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<style>
+/* General styles for grid items */
+.acg_tools-wrapper {
+  display: grid;
+  grid-column-gap: 26px;
+  grid-row-gap: 26px;
+  grid-template-rows: repeat(5, auto); /* Adjust to the number of rows */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: flex-start;
+}
+
+/* Blur effect for last 2 rows in Desktop */
+@media (min-width: 768px) {
+  .acg_tools-wrapper > .acg_tool:nth-child(n+7) {
+    filter: blur(8px);
+    transition: filter 0.3s ease;
+  }
+}
+
+/* Blur effect for last 3 rows in Mobile */
+@media (max-width: 767px) {
+  .acg_tools-wrapper > .acg_tool:nth-child(n+7) {
+    filter: blur(8px);
+    transition: filter 0.3s ease;
+  }
+  .acg_tools-wrapper {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+</style>
+        
+        <section class="acg_section">
+          <div class="acg_padding-global">
+            <div
+              class="w-layout-blockcontainer acg_container-medium w-container"
+            >
+              <div class="acg_tools">
+                <div class="acg_heading-h2-wrapper">
+                  <h2 class="acg_heading-h2 acg_black-text">
+                    Learn <span class="acg_linear-gradient">20+ AI Tools</span>
+                  </h2>
+                </div>
+                <div class="acg_tools-wrapper">
+                  <div
+                    id="w-node-_2a16bf23-ae8d-303c-bfe9-74705153f0ae-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-143.webp"
+                      loading="lazy"
+                      alt=""
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_0d3c0f3d-e75a-4cf0-940e-0609094cc569-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-144.webp"
+                      loading="lazy"
+                      alt=""
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-a39900cd-312c-7a2f-cd47-07715f183c6e-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-145.webp"
+                      loading="lazy"
+                      alt=""
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-b442ca5e-6975-760d-025b-e51fc5a7e13c-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-146.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_737c2209-beee-9ed4-290e-a07c11258c82-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-147.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_1f788f32-713c-129a-a947-8c551fb92e5b-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-148.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-d1ad89ca-9a1d-5088-26e2-96d68053d10a-0986b2cc "
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-149.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo "
+                    />
+                  </div>
+                  <div
+                    id="w-node-_1585c84f-2d3a-d570-98be-ac49801463e7-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-150.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-d3420b00-74ce-4a18-6402-f66f786a17f8-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-151.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_1073f9aa-9ab9-9022-2930-e42f1c556700-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-152.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_749ac755-6e96-fc30-f89c-b74f732c6d78-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-153.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-cf5cafe3-6392-a266-32da-47cac025cdfb-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-154.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_6e308028-a14e-734a-e128-2b2a803c021c-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-155.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_71cb36f1-1561-038a-4877-c3d079cc8e02-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-156.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_32ab4e65-5c9a-4a74-bb58-2d38a342157e-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-157.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-ac27e008-662f-eb39-a2c9-3c5e3cca42b1-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-158.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-_2852e445-1749-0354-3dc8-a37c32e47b07-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-158-1.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                  <div
+                    id="w-node-d9e0a09a-83f3-50e5-a7d8-b100ac5d732f-0986b2cc"
+                    class="acg_tool acg_tool-border"
+                  >
+                    <img
+                      src="https://course.growthschool.io/images/Rectangle-159.webp"
+                      loading="lazy"
+                      alt=""
+                      height="Auto"
+                      class="acg_tool-logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          .acg_chatgpt-hour-light{
+                position: absolute;
+                top: 230px;
+                right: -190px;
+                width: 453px;
+                height: 420px;
+                animation: 20s linear 0s infinite normal none running fa-spin;
+          }
+        </style>
+        <section class="acg_section acg_overflow">
+          <img src="chatgpt-logo-png_seeklogo-500383.png" class="acg_chatgpt-hour-light" />
+          <div class="acg_image-line">
+            <img src="images/Line-8-1.png" alt="" />
+          </div>
+
+          <style>
+            .acg_dropdown-question {
+              white-space: normal !important;
+            }
+            /* .acg_module-card-wrapper{
+  z-index: -10 !important;
+} */
+          </style>
+
+          <div class="acg_padding-global">
+            <div
+              class="w-layout-blockcontainer acg_container-medium w-container"
+            >
+              <div class="acg_common-wrapper">
+                <div class="acg_heading-h2-module-wrapper">
+                  <h2 class="acg_heading-h2 acg_black-text">
+                   Inside the 2-Day AI Mastermind: What You’ll Learn
+                  </h2>
+                </div>
+                <div class="acg_module-card-wrapper">
+                  <div
+                    id="w-node-_0f613758-1886-8f00-d085-a5a56b90e03a-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/Rectangle-160.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                           Understanding Generative AI & Prompt Engineering
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav class="acg_dropdown-list-wrap-light w-dropdown-list">
+                        <div class="acg_dropdown-list-block">
+                           <ul role="list" class="acg_-ist acg_black-text">
+                            <li>
+                            Gain a deep, working knowledge of how generative AI models like ChatGPT, Claude, and Gemini function.
+                            </li>
+                            <li>
+                             Learn the key principles of prompt engineering to get precise, high-quality outputs from any AI tool.
+                            </li>
+                              <li>
+                            Understand how to effectively communicate with AI, whether for generating content, code, images, or strategy ideas.
+                            </li>
+                            <li>
+                            Walk away with practical skills to leverage AI for a variety of tasks and business needs.
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-_7f5f75c8-e84a-3cf1-5eab-6828a0f63aed-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/Rectangle-160-1.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                           ChatGPT and 20+ AI Tools
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav class="acg_dropdown-list-wrap-light w-dropdown-list">
+                        <div class="acg_dropdown-list-block">
+                       
+                          <ul role="list" class="acg_-ist acg_black-text">
+                                <li>
+                              Explore a curated set of 20+ powerful AI tools designed to save you hours of manual work. 
+                            </li>
+                            <li>
+                             From writing and research to brainstorming, task management, and design—this session will give you the ultimate productivity toolkit. 
+                            </li>
+                            <li>
+                             You’ll not only discover which tools to use, but also learn how to integrate them into your daily workflow for maximum efficiency.
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-_6cc8f53b-9307-cef9-7dfb-05de9f2ee38f-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/Rectangle-160-2.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                           Create AI-Powered Writing Assistants
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav class="acg_dropdown-list-wrap-light w-dropdown-list">
+                        <div class="acg_dropdown-list-block">
+                      
+                          <ul role="list" class="acg_-ist acg_black-text">
+                            <li>
+                             Build your own AI writing bot trained to sound just like you.
+                            </li>
+                            <li>
+                             Use GPT-powered tools to fine-tune AI to replicate your unique tone and writing style.
+                            </li>
+                            <li>
+                           Easily write blogs, social posts, emails, or scripts that feel personal and on-brand.
+                            </li>
+                             <li>
+                           Learn the future of scalable, authentic content creation.
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-_4f21f946-7a1d-e64e-d180-c17267df0054-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/Rectangle-160-3.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                            Automate Workflows with AI and No-Code Platforms
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav class="acg_dropdown-list-wrap-light w-dropdown-list">
+                        <div class="acg_dropdown-list-block">
+                          <ul role="list" class="acg_-ist acg_black-text">
+                            <li>
+                             Learn to build AI-driven automations using no-code platforms like Make.com.
+                            </li>
+                            <li>
+                            Automate tasks like posting content on LinkedIn, sending follow-up emails, and updating databases.
+                            </li>
+                              <li>
+                           Make AI work in the background so you can focus on big-picture thinking.
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-ac61238c-0f4f-d7cf-f378-d5a09f9138b2-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/Rectangle-160-4.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                            Explore Image and Video Generation with AI
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav class="acg_dropdown-list-wrap-light w-dropdown-list">
+                        <div class="acg_dropdown-list-block">
+                         
+                          <ul role="list" class="acg_-ist acg_black-text">
+                            <li>
+                           Dive into AI-generated media with tools like MidJourney and Runway ML.
+                            </li>
+                            <li>
+                             Create studio-quality images, social media visuals, short videos, and cinematic content with prompts.
+                            </li>
+                            <li>
+                             Perfect for marketers, creators, and entrepreneurs seeking to enhance visual storytelling.
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-_30976de9-049a-d3cb-a0fa-718dc2b53e23-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/Rectangle-160-5.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                            Build Digital Products without Code
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav
+                        class="acg_dropdown-list-wrap acg_dropdown-list-wrap-light w-dropdown-list"
+                      >
+                        <div class="acg_dropdown-list-block">
+                         
+                          <ul role="list" class="acg_-ist acg_black-text">
+                            <li>
+                            No coding knowledge needed to build and launch products.
+                            </li>
+                            <li>
+                       Use no-code platforms like Vibe Coding and AI tools to create apps, landing pages, automations, and digital products.
+                            </li>
+                            <li>
+                            Gain the power to turn your ideas into working solutions without a developer.
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-_1f9ba37c-bcdf-bc33-de31-aec349506b4f-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/Rectangle-160-6.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                         Use AI for Data Analysis and Decision-Making
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav class="acg_dropdown-list-wrap-light w-dropdown-list">
+                        <div class="acg_dropdown-list-block">
+                         
+                          <ul role="list" class="acg_-ist acg_black-text">
+                            <li>
+                             Learn how to clean, analyze, and make sense of raw data with AI.
+                            </li>
+                            <li>
+                            Extract insights and create visual dashboards in minutes from sales data, survey results, and business metrics.
+                            </li>
+                            <li>
+                            Use AI as your personal data analyst to make faster, smarter decisions.
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-_580c132b-3484-decb-f377-791c282e4c0e-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/Rectangle-160-7.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                          Content Creation Using GenAI
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav class="acg_dropdown-list-wrap-light w-dropdown-list">
+                        <div class="acg_dropdown-list-block">
+                         
+                          <ul role="list" class="acg_-ist acg_black-text">
+                            <li>
+                             Speed up content creation and improve quality with AI.
+                            </li>
+                            <li>
+                             
+
+Generate scroll-stopping content for LinkedIn, Instagram, emails, and websites quickly.
+
+                            </li>
+                               <li>
+                             
+
+Practice writing hooks, headlines, blogs, carousels, and scripts using AI, keeping the human touch intact.
+
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-cad7ef0d-3e8c-9eb2-7c7d-692d40618151-0986b2cc"
+                    class="acg_module-card"
+                  >
+                    <div
+                      data-hover="false"
+                      data-delay="0"
+                      class="acg_module-card-wrapper-dropdown acg_light w-dropdown"
+                    >
+                      <div
+                        class="acg_module-card-wrapper-dropdown-toggle acg_light-toogle w-dropdown-toggle"
+                      >
+                        <div class="acg_dropdown-question-wrapper">
+                          <div class="acg_dropdown-icon acg_icon-light">
+                            <img
+                              src="https://course.growthschool.io/images/image-32-2.webp"
+                              loading="lazy"
+                              alt=""
+                            />
+                          </div>
+                          <div class="acg_dropdown-question acg_black-text">
+                            Emerging AI Trends<br />
+                          </div>
+                        </div>
+                        <div
+                          class="acg_icon acg_black-text w-icon-dropdown-toggle"
+                        ></div>
+                      </div>
+                      <nav class="acg_dropdown-list-wrap-light w-dropdown-list">
+                        <div class="acg_dropdown-list-block">
+                         
+                          <ul role="list" class="acg_-ist acg_black-text">
+                            <li>
+                             Stay ahead in the rapidly evolving AI world.
+                            </li>
+                            <li>
+                             Discover the latest tools, innovations, and business applications you should watch.
+                            </li>
+                            <li>
+                          Learn how top professionals use AI for growth, cost-saving, and gaining a competitive edge.
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="acg_section">
+          <div class="acg_padding-global">
+            <div class="w-layout-blockcontainer acg_container w-container">
+              <div class="acg_blur-wrap">
+                <div class="acg_blur acg_blur-light"></div>
+                <div class="acg_bonus">
+                  <div class="acg_heading-h2-wrapper">
+                    <h2 class="acg_heading-h2 acg_black-text">
+                      And Also Enjoy
+                      <span class="acg_linear-gradient-h2"
+                        >Bonuses Worth $99 for FREE!</span
+                      >
+                    </h2>
+                  </div>
+                  <div class="acg_bonus-wrap">
+                    <div
+                      id="w-node-c75be9a3-2100-6631-baa4-f80478b992e4-0986b2cc"
+                      class="acg_bonus-card acg_bonus-card-light"
+                    >
+                      <div class="acg_number">1</div>
+                      <div class="acg_number-text">
+                        List of Gold-Standard and Hidden Prompts for GPT16
+                      </div>
+                      <div class="acg_bonus-img-wrap">
+                        <img
+                          src="https://course.growthschool.io/images/Mask-group-2.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_bonus-img"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      id="w-node-_7f211227-6c32-f52b-fe98-d306c9aeac0a-0986b2cc"
+                      class="acg_bonus-card acg_bonus-card-light"
+                    >
+                      <div class="acg_number">2</div>
+                      <div class="acg_number-text">
+                        Copy-Paste Template To Using All in one AI tools like
+                        Simplified.com
+                      </div>
+                      <div class="acg_bonus-img-wrap">
+                        <img
+                          src="https://course.growthschool.io/images/Mask-group.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_bonus-img"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      id="w-node-_491f6a20-d55a-8a7c-6433-6660d8877b7d-0986b2cc"
+                      class="acg_bonus-card acg_bonus-card-light"
+                    >
+                      <div class="acg_number">3</div>
+                      <div class="acg_number-text">
+                        Step by Step Method of Coding a Website with 0 prior
+                        knowledge in tech
+                      </div>
+                      <div class="acg_bonus-img-wrap">
+                        <img
+                          src="https://course.growthschool.io/images/Mask-group-1.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_bonus-img"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      id="w-node-_9d8942e2-5814-a44d-cfaa-005504b23492-0986b2cc"
+                      class="acg_bonus-card acg_bonus-card-light"
+                    >
+                      <div class="acg_number">4</div>
+                      <div class="acg_number-text">
+                        Creating AI generated personas that provide you support
+                        of 10 humans using Synthesia
+                      </div>
+                      <div class="acg_bonus-img-wrap">
+                        <img
+                          src="https://course.growthschool.io/images/image-33.webp"
+                          loading="lazy"
+                          alt=""
+                          class="acg_bonus-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <a href="https://rzp.io/rzp/PhAVaRu" class="acg_button width-186 white-acg w-button final-cta" data-track-cta="true"
+                    >Join Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="acg_section acg_overflow">
+
+
+          
+          <div class="acg_image-line">
+            <img
+              src="images/Line-8-1.png"
+              loading="lazy"
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, 847.609375px"
+              srcset="
+                images/Line-8-1-p-500.png   500w,
+                images/Line-8-1-p-800.png   800w,
+                images/Line-8-1-p-1080.png 1080w,
+                images/Line-8-1-p-1600.png 1600w,
+                images/Line-8-1-p-2000.png 2000w,
+                images/Line-8-1-p-2600.png 2600w,
+                images/Line-8-1-p-3200.png 3200w,
+                images/Line-8-1.png        3389w
+              "
+              alt=""
+            />
+          </div>
+          <div class="acg_padding-global">
+            <div
+              class="w-layout-blockcontainer acg_container-medium w-container"
+            >
+              <div class="acg_common-wrapper">
+                <div class="acg_heading-h2-module-wrapper">
+                  <h2 class="acg_heading-h2 acg_black-text">
+                    Meet Your <span class="acg_linear-gradient">Mentor</span>
+                  </h2>
+                </div>
+                <div class="acg_mentor-wrapper acg_mentor-wrapper-light">
+                  <div
+                    id="w-node-_2af4b330-43df-9609-23d4-f61b67eb501e-0986b2cc"
+                    class="acg_image-wrapper"
+                  >
+                    <img
+                      src="images/image-14.webp"
+                      loading="lazy"
+                      alt=""
+                      class="acg_mentor-image"
+                    />
+                    <div class="acg_mentor-details">
+                      <div class="acg_mentor-name">Vaibhav Sisinty</div>
+                      <div class="acg_mentor-role">Founder - GrowthSchool</div>
+                    </div>
+                  </div>
+                  <div
+                    id="w-node-_87f1ca18-6b14-78ae-e0ad-bad29c698684-0986b2cc"
+                    class="acg_mentor-right"
+                  >
+                    <div class="acg_mentor-about acg_black-text">
+                      Hey Folks, I’m Vaibhav Sisinty, and I’m super excited to
+                      be your mentor for this workshop. <br /><br />Previously,
+                      I worked with Uber (India &amp; LATAM), contributing to
+                      the company&#x27;s growth from hundreds to millions of
+                      daily trips. <br /><br />Then I contributed to business
+                      operations for unicorn travel startup Klook in India and
+                      the Middle East, achieving 5x business growth within just
+                      12 months.<br /><br />During the pandemic, I started
+                      GrowthSchool and within 2 years, expanded the team to 170+
+                      members with marquee investors like Sequoia and Owl
+                      Ventures investing over $5 million into GrowthSchool.<br /><br />I’ve
+                      helped 100,000+ learners through my LinkedIn and Growth
+                      Hacking program. And, I’ve also helped more than 1 million
+                      people leverage the power of Generative AI and ChatGPT.
+                    </div>
+                    <div class="acg_mentor-follower">
+                      <div
+                        id="w-node-_09a580e3-5722-7912-d25a-3e10fa6a62a1-0986b2cc"
+                        class="acg_mentor-socila acg_mentor-socila-light"
+                      >
+                        <div class="acg_socila-logo acg_socila-logo-light">
+                          <div class="w-embed">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="27"
+                              height="27"
+                              viewbox="0 0 28 28"
+                              fill="none"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M3.30138 0.683426C2.41802 0.873832 1.50756 1.58795 1.10845 2.4035C0.493278 3.66057 0.722178 5.13684 1.68826 6.14327C2.96066 7.4688 5.07739 7.46837 6.34613 6.14237C7.31433 5.13048 7.54074 3.66582 6.92297 2.41065C6.63951 1.83472 6.02263 1.21668 5.46552 0.950398C4.7635 0.61492 4.0357 0.525152 3.30138 0.683426ZM19.9293 9.27248C18.2909 9.58071 16.8956 10.4729 16.0358 11.7621L15.7883 12.1332L15.7741 10.8739L15.7599 9.61464H13.0567H10.3535V18.6816V27.7486H13.1637H15.9739L15.9741 22.9897C15.9742 20.0287 15.9956 18.0025 16.0309 17.6262C16.2123 15.6898 16.9333 14.6128 18.2895 14.2524C18.7749 14.1234 19.5905 14.0962 20.0476 14.1938C20.9184 14.3796 21.4106 14.7568 21.7789 15.5203C22.2595 16.5168 22.2837 16.8661 22.2837 22.823V27.7486H25.0939H27.9041L27.9039 22.3004C27.9038 19.1789 27.8809 16.5353 27.8503 16.11C27.6711 13.6141 27.1243 12.0194 26.0561 10.8775C25.335 10.1066 24.3711 9.60839 23.0829 9.34057C22.3915 9.19682 20.5434 9.15695 19.9293 9.27248ZM1.21625 9.64953C1.19658 9.6692 1.18046 13.7495 1.18046 18.717V27.7486H4.01735H6.85425L6.84083 18.6949L6.82742 9.64115L4.03973 9.62742C2.50651 9.61989 1.23597 9.62981 1.21625 9.64953Z"
+                                fill="white"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="acg_mentor-scoial-num">
+                          <div class="acg_num">
+                            <div class="acg_socialnum acg_black-text">
+                              150M+
+                            </div>
+                            <div class="acg_socialtext acg_black-text">
+                              impressions
+                            </div>
+                          </div>
+                          <div class="acg_center-line"></div>
+                          <div class="acg_num">
+                            <div class="acg_socialnum acg_black-text">
+                              330K+
+                            </div>
+                            <div class="acg_socialtext acg_black-text">
+                              Followers
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="w-node-_4d4530a2-9382-4f39-2929-d639dbb99046-0986b2cc"
+                        class="acg_mentor-socila social_acg acg_mentor-socila-light"
+                      >
+                        <div class="acg_socila-logo acg_socila-logo-light">
+                          <img
+                            src="images/instagram-1-Traced.png"
+                            loading="lazy"
+                            alt=""
+                            height="Auto"
+                            class="image-539"
+                          />
+                        </div>
+                        <div class="acg_mentor-scoial-num">
+                          <div class="acg_num">
+                            <div class="acg_socialnum acg_black-text">
+                              165k+
+                            </div>
+                            <div class="acg_socialtext acg_black-text">
+                              Instagram
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        id="w-node-_293f06c8-cafb-ce4f-dc64-c77162fb27d1-0986b2cc"
+                        class="acg_mentor-socila social_acg acg_mentor-socila-light"
+                      >
+                        <div class="acg_socila-logo acg_socila-logo-light">
+                          <div class="w-embed">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="27"
+                              height="27"
+                              viewbox="0 0 29 26"
+                              fill="none"
+                            >
+                              <g clip-path="url(#clip0_29_3090)">
+                                <path
+                                  d="M22.0761 0.303894H26.3475L17.0179 11.1036L28.0336 25.7483H19.3784L12.6341 16.8711L4.8781 25.7483H0.606704L10.6108 14.2135L0.0446777 0.303894H8.92469L15.0508 8.44612L22.0761 0.303894ZM20.5586 23.1474H22.9191L7.63203 2.73525H5.04671L20.5586 23.1474Z"
+                                  fill="white"
+                                ></path>
+                              </g>
+                              <defs>
+                                <clippath id="clip0_29_3090">
+                                  <rect
+                                    width="27.9889"
+                                    height="25.4444"
+                                    fill="white"
+                                    transform="translate(0.0446777 0.303894)"
+                                  ></rect>
+                                </clippath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="acg_mentor-scoial-num">
+                          <div class="acg_num">
+                            <div class="acg_socialnum acg_black-text">
+                              118k+
+                            </div>
+                            <div class="acg_socialtext acg_black-text">
+                              Twitter
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+    <section class="mentors-section">
+      <h2 class="section-title">Learn directly from the top 1% in AI</h2>
+      <p class="section-description">
+        ...and unlock cutting-edge tools to revolutionize your work and creativity.
+      </p>
+
+      <!-- Mentor Cards Container for Mobile Scrolling -->
+      <div class="mentor-cards-container">
+        <div class="mentor-cards">
+              <div class="mentor-card">
+            <img
+              src="a1.jfif"
+              class="mentor-image"
+            />
+            <div class="mentor-info">
+              <h3 class="mentor-name">Volodymyr Nosenko</h3>
+              <p class="mentor-position">Director TPEG</p>
+            </div>
+          </div>
+
+         
+
+          <div class="mentor-card">
+            <img
+              src="a2.jfif"
+              class="mentor-image"
+            />
+            <div class="mentor-info">
+              <h3 class="mentor-name">Dorian Lazzari</h3>
+              <p class="mentor-position">Visual Art Director</p>
+              
+            </div>
+          </div>
+
+          <div class="mentor-card">
+            <img
+              src="a4.jfif"
+              class="mentor-image"
+            />
+            <div class="mentor-info">
+              <h3 class="mentor-name">Pasha Levosiuk</h3>
+              <p class="mentor-position">Media Founder</p>
+               
+            </div>
+          </div>
+
+          <div class="mentor-card">
+            <img
+              src="a3.jfif"
+              class="mentor-image"
+            />
+            <div class="mentor-info">
+              <h3 class="mentor-name">Pavlo Khlopiachyi·</h3>
+              <p class="mentor-position">AI Founder</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .overlay1{
+            position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    display: flex
+;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.7) 0%, /* Black with 70% opacity */ rgba(0, 0, 0, 0.3) 60%, /* Black with 30% opacity at 60% */ rgba(0, 0, 0, 0) 100% /* Fully transparent at the top */) !important;
+    pointer-events: none;
+      }
+    </style>
+
+
+ <section class="acg_section acg_overflow">
+
+<style>
+.pricing-card { border:0; border-radius:1rem; box-shadow:0 10px 25px rgba(0,0,0,.06); }
+.pricing-card .card-header { background:#fff; border-bottom:0; border-top-left-radius:1rem; border-top-right-radius:1rem; }
+.price { font-size:2rem; font-weight:700; }
+.duration { font-size:0.95rem; color:#6c757d; }
+.btn {  padding:.65rem 1rem; font-weight:600; }
+</style>
+
+
+
+<div class="container py-5">
+<div class="text-center mb-4">
+<h1 class="h3 font-weight-bold mb-2">Choose Your Plan</h1>
+<p class="text-muted mb-0">Click “Join Now” to proceed to payment</p>
+</div>
+
+
+<div class="row">
+<!-- Demo Plan -->
+<div class="col-12 col-md-6 col-lg-3 mb-4">
+<div class="card pricing-card h-100">
+<div class="card-header text-center">
+<h5 class="mb-1">Demo</h5>
+<div class="price">$1</div>
+<div class="duration">30 minutes</div>
+</div>
+<div class="card-body d-flex flex-column">
+<ul class="list-unstyled small text-muted mb-4">
+<li>Quick overview session</li>
+<li>Live demo access</li>
+</ul>
+<a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-primary" >Join Now</a>
+</div>
+</div>
+</div>
+
+
+<!-- Basic Plan -->
+<div class="col-12 col-md-6 col-lg-3 mb-4">
+<div class="card pricing-card h-100">
+<div class="card-header text-center">
+<h5 class="mb-1">Gold</h5>
+<div class="price">$99</div>
+<div class="duration">6 weeks</div>
+</div>
+<div class="card-body d-flex flex-column">
+<ul class="list-unstyled small text-muted mb-4">
+<li>Foundational curriculum</li>
+<li>Community support</li>
+</ul>
+<a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-primary" data-track-cta="true">Join Now</a>
+</div>
+</div>
+</div>
+
+
+<!-- Diamond Plan -->
+<div class="col-12 col-md-6 col-lg-3 mb-4">
+<div class="card pricing-card h-100">
+<div class="card-header text-center">
+<h5 class="mb-1">Daimond</h5>
+<div class="price">$199</div>
+<div class="duration">12 weeks</div>
+</div>
+<div class="card-body d-flex flex-column">
+<ul class="list-unstyled small text-muted mb-4">
+<li>Advanced topics</li>
+<li>Live projects</li>
+<li>.</li>
+<li>.</li>
+</ul>
+<a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-primary" data-track-cta="true">Join Now</a>
+</div>
+</div>
+</div>
+
+
+<!-- 24 Week Plan -->
+<div class="col-12 col-md-6 col-lg-3 mb-4">
+<div class="card pricing-card h-100">
+<div class="card-header text-center">
+<h5 class="mb-1">Extended</h5>
+<div class="price">$490</div>
+<div class="duration">24 weeks</div>
+</div>
+<div class="card-body d-flex flex-column">
+<ul class="list-unstyled small text-muted mb-4">
+<li>Complete program</li>
+<li>Full support</li>
+<li>.</li>
+</ul>
+<a href="https://rzp.io/rzp/PhAVaRu" class="btn btn-primary" data-track-cta="true">Join Now</a>
+</div>
+</div>
+</div>
+    </section>
+ 
+
+
+
+
+<!-- Modal -->
+ <div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+      <div class="modal-header">
+        <h5 class="modal-title">Complete Your Details</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="userForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Mobile</label>
+            <input type="text" id="mobile" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label>Country</label>
+            <input type="text" id="country" class="form-control" required>
+          </div>
+
+          <input type="hidden" id="plan" value="basic" />
+          <input type="hidden" id="amount"  value="1"/>
+
+          <button type="submit" class="btn btn-primary btn-block">Pay with Razorpay</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Razorpay checkout script -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+  let selectedAmount = 0;
+  let selectedPlan = '';
+  const ExcelscriptURL = "https://script.google.com/macros/s/AKfycbwjQDVrVVxtQaNsfeL2dW4Z2L5bjBjvpPUwzF9isLU3Wlj4Z-wMYBA9v-NvoFVWX8ldqw/exec";
+  const EmailscriptURL="https://script.google.com/macros/s/AKfycbwO3sLxRNd4Hn1G3FHUyrPlA8rqR6tmnCVDE8m6xmjyPaW3Ue0toYUAeFKl1x6wjcW53g/exec";
+  //const EmailscriptURL = "https://script.google.com/macros/s/AKfycbw60K_h3XBd4WQ3rjGIB8GN94CHmhJLqqI8U8YfGoZntz_4M9nGLh_nWitpM9PPqgTzKw/exec";
+
+  // Modal open होने पर values set करना
+  $('#paymentModal').on('show.bs.modal', function (event) {
+    const button = $(event.relatedTarget);
+    selectedAmount = button.data('amount');
+    selectedPlan = button.data('plan');
+    $('#plan').val(selectedPlan);
+    $('#amount').val(selectedAmount);
+  });
+
+  // Form submit
+  document.getElementById("userForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const mobile = document.getElementById("mobile").value;
+    const country = document.getElementById("country").value;
+    const amountUSD = document.getElementById("amount").value; 
+    const amountCents = 1 * 100; // USD cents me
+
+    if (!name || !email || !mobile || !country) {
+      alert("Please fill all details.");
+      return;
+    }
+
+    try {
+      // 1️⃣ First Save Lead in Excel
+      const sheetForm = new URLSearchParams();
+      sheetForm.append("name", name);
+      sheetForm.append("email", email);
+      sheetForm.append("mobile", mobile);
+      sheetForm.append("country", country);
+      sheetForm.append("plan", selectedPlan);
+      sheetForm.append("amount", amountUSD);
+      sheetForm.append("payment_id", '');
+      sheetForm.append("status", "INITIATED");
+
+      await fetch(ExcelscriptURL, { method: "POST", body: sheetForm });
+      console.log("✅ Lead saved in Sheet");
+
+      // 2️⃣ Razorpay Payment rzp_test_NYV2fmAamNENSP    Planofy rzp_live_MLkl6FvJYXO1qh     TpegInter:rzp_live_RGFoLUqdBitXl9
+      var options = {
+        "key": "rzp_live_RGFoLUqdBitXl9",
+        "amount": amountCents,
+        "currency": "INR",
+        "name": "AI 4",
+        "description": selectedPlan,
+        "handler": async function (response) {
+          alert("✅ Payment Successful! Payment ID: " + response.razorpay_payment_id);
+
+          // 3️⃣ Send Email after successful payment
+          const emailForm = new URLSearchParams();
+          emailForm.append("name", name);
+          emailForm.append("email", email);
+          emailForm.append("mobile", mobile);
+          emailForm.append("country", country);
+          emailForm.append("plan", selectedPlan);
+          emailForm.append("amount", amountUSD);
+          emailForm.append("payment_id", response.razorpay_payment_id);
+
+          await fetch(EmailscriptURL, { method: "POST", body: emailForm });
+          console.log("✅ Email sent successfully");
+
+          // 4️⃣ Add another row in Excel with Payment Status
+          const paymentForm = new URLSearchParams();
+          paymentForm.append("name", name);
+          paymentForm.append("email", email);
+          paymentForm.append("mobile", mobile);
+          paymentForm.append("country", country);
+          paymentForm.append("plan", selectedPlan);
+          paymentForm.append("amount", amountUSD);
+          paymentForm.append("payment_id", response.razorpay_payment_id);
+          paymentForm.append("status", "PAID");
+
+          await fetch(ExcelscriptURL, { method: "POST", body: paymentForm });
+          console.log("✅ Payment saved in Sheet");
+
+          document.getElementById("userForm").reset();
+        },
+        "prefill": {
+          "name": name,
+          "email": email,
+          "contact": mobile
+        },
+        "notes": {
+          "country": country,
+          "plan": selectedPlan
+        },
+        "theme": {
+          "color": "#007bff"
+        }
+      };
+
+      var rzp1 = new Razorpay(options);
+      rzp1.open();
+
+    } catch (err) {
+      alert("❌ Error: " + err);
+    }
+  });
+</script>
+
+   </body>
+
+</html>
